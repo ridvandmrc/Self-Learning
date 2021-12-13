@@ -96,3 +96,17 @@ Js does not have a date data type. but we can use the Date object...
 and it also have large number of methods
 
 you can see docs for [date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates#date_object)
+
+### ===> Summary
+* +Infinity, -Infinity and NaN
+* Number Object
+    * MAX_VALUE, MIN_VALUE
+    * POSITIVE_INFINITY, NEGATIVE_INFINITY
+    * NaN, EPSILON
+    * MIN_SAFE_INTEGER, MAX_SAFE_INTEGER
+* Number Method
+    * isNaN, isSafeInteger, isInteger and isFinite
+* for floating point
+    * toFixed
+    * toExponential
+    * toPrecision
