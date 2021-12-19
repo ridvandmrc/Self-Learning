@@ -199,3 +199,12 @@ console.log(total) // Prints 60
  it works like reduce(), but starts with last element.
 
 ### ====> Summary
+* there are several ways to create array (Array, new Array or [])
+* array length calculating like that, last element of index plus one
+* some fundamental array methods
+    * unshift
+    * splice
+    * sort(callback , (callback(current,next)))
+    * every, return true if all elements are true
+    * some, return true if at least one item in the array
+    * reduce (callback,initial value), using for reducing the list of items down to a single value
