@@ -87,3 +87,115 @@ console.log(cats)  // logs [ <3 empty items> ]
 ```
 
 ### Array Methods
+
+Array has some methods:
+
+### ***Join***
+join(delimiter = ',') joins all elements of an array into a string.
+
+```js
+let myArray = new Array('Wind', 'Rain', 'Fire')
+let list = myArray.join(' - ') // list is "Wind - Rain - Fire"
+```
+
+### ***pop()***
+
+it removes the last element from an array, returns that element
+
+### ***shift***
+
+it removes the first element from an array, returns that element
+
+### ***unshift()***
+it adds one or more elements to the front of an array ...
+
+```js
+let myArray = new Array('1', '2', '3')
+myArray.unshift('4', '5')
+// myArray becomes ["4", "5", "1", "2", "3"]
+```
+
+### ***splice()***
+it removes elements form an array and (optionally) replace them.
+```js
+let myArray = new Array('1', '2', '3', '4', '5')
+myArray.splice(1, 3, 'a', 'b', 'c', 'd')
+// myArray is now ["1", "a", "b", "c", "d", "5"]
+// This code started at index one (or where the "2" was),
+// removed 3 elements there, and then inserted all consecutive
+// elements in its place.
+```
+
+### ***sort()***
+sort the elements of an array ***in place***
+
+```js
+let myArray = new Array('Wind', 'Rain', 'Fire')
+myArray.sort()
+// sorts the array so that myArray = ["Fire", "Rain", "Wind"]
+```
+
+sort also can take callback function to determine how array elements compared.
+
+Callback function is called with two arguments, that are array's elements.
+
+one is current element, other is next element.
+
+```js
+let sortFn = function(a, b) {
+  if (a[a.length - 1] < b[b.length - 1]) return -1;
+  if (a[a.length - 1] > b[b.length - 1]) return 1;
+  if (a[a.length - 1] == b[b.length - 1]) return 0;
+}
+myArray.sort(sortFn)
+// sorts the array so that myArray = ["Wind","Fire","Rain"]
+```
+
+* if a is less than b, return -1 ( or any negative number).
+* if a is greater than b, return 1 ( or any positive number).
+* if they are equal, return 0
+
+### ***every()***
+
+returns true if callback return true fır every item in array.
+```js
+function isNumber(value) {
+  return typeof value === 'number'
+}
+let a1 = [1, 2, 3]
+console.log(a1.every(isNumber))  // logs true
+let a2 = [1, '2', 3]
+console.log(a2.every(isNumber))  // logs false
+```
+
+### ***some()***
+returns true, if callback return true for at least one item in the array.
+
+```js
+function isNumber(value) {
+  return typeof value === 'number'
+}
+let a1 = [1, 2, 3]
+console.log(a1.some(isNumber))  // logs true
+let a2 = [1, '2', 3]
+console.log(a2.some(isNumber))  // logs true
+let a3 = ['1', '2', '3']
+console.log(a3.some(isNumber))  // logs false
+```
+
+### ***reduce(callback,initial value)***
+the purpose of this method is  reducing the list of items down to a single value.
+
+* initial value is using for first value of accumulator.
+* if ***initialValue*** is not specified, then callback's first paramater values will be the first and second elements of the array.
+* if callback needs access to the index. or access to entire array, they are available as optional parameters.
+```js
+let a = [10, 20, 30]
+let total = a.reduce(function(accumulator, currentValue) { return accumulator + currentValue }, 0)
+console.log(total) // Prints 60
+```
+
+### ***reduceRight(callback,initial value)***
+ it works like reduce(), but starts with last element.
+
+### ====> Summary
