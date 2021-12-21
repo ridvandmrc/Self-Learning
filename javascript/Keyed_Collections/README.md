@@ -34,3 +34,4 @@ Object have been used to string values. Objects allow us to set keys to values, 
  * iteration of maps is in insertion order of elements.
 
 -- When should I chose map or object?
+* 
