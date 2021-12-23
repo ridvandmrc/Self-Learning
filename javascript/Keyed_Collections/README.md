@@ -90,3 +90,13 @@ Differences between set and WeakSet;
 * In contrast to Sets, WeakSets are ***collections of object only*** and not of arbitary values of any type.
 * weakset are not ***enumerable***.
 * enumrable means, it can be iterated
+
+### =====> Summary
+* map can iterate with ***for...of*** (for(let [key,value] of map))
+* keys of object are string or symbols, map refer any
+* iteration of maps is in insertion order of elements
+* use map if key type is unknown and keys are primitive
+* use object if there is a logic
+* set is unique, can convert array, has delete from value,
+* if type is used in ***for ... in*** it is enumerable
+* weakSet is not enumerable
