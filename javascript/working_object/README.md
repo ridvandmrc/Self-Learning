@@ -51,7 +51,7 @@ console.log(myObj);
 There are three native ways to list/traverse object;
 * ***for...in*** loops. This method traverses all enumarable properties of an object an its prototype chain.
 * ***Object.keys(o)***. This method returns an array with all the own.
-* Object.getOwnPropertyNames(o). this method returns an array containing all own properties.
+* ***Object.getOwnPropertyNames(o)***. this method returns an array containing all own properties.
 
 ```js
 const a = {first:'first',second:'second'}
@@ -212,4 +212,34 @@ myobj.b = 12;
 // Removes the a property, leaving myobj with only the b property.
 delete myobj.a; // delete
 console.log ('a' in myobj); // output: "false"
+```
+
+## ====> Summary
+* object keys can be any typeof string even if empty.
+* we can enumarate object three ways;
+    * for ... in
+    * Object.keys(o)
+    * Object.getOwnPropertyNames(o)
+* Using a constructor function. Strong convention
+    * use new when create instance,
+```js
+function Car(name, model, year) {
+  this.name = name;
+  this.model = model;
+  this.year = year;
+}
+
+// we should use with ****new***
+const myCar = new Car('hundai','i30','2015')
+myCar.name // hundai
+myCar.model // i30
+myCar.year // 2015
+```
+* ***this*** is a special keyword, we can use within a method to refer to current object
+```js
+function howOldAmI() {
+  console.log(`I am ${this.age} years old.`);
+}
+Manager.howOldAmI = howOldAmI;
+Manager.howOldAmI(); // I am 27 years old.
 ```
