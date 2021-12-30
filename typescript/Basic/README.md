@@ -14,3 +14,53 @@ message();
 This expression is not callable.
   Type 'String' has no call signatures.
 ```
+
+### Non-exception Failures
+
+JavaScript runtime tells us that it thinks something is nonsensical.
+
+For example, the specification says that trying to call something that is not callable should throw an error. that sound's good. in that case,  we are expecting throw error that accessing property that does not exist.
+instead, JS gives us different behavior and returns ***undefined***.
+
+```js
+const user = {
+  name: "Daniel",
+  age: 26,
+};
+user.location; // returns undefined
+```
+
+Ultimately, a static type system has to raise a flag while do that even if it's valid in JS. 
+In TS produces an error about ***location*** not being defined:
+
+```ts
+const user = {
+  name: "Daniel",
+  age: 26,
+};
+ 
+user.location; // property 'location' does not exist on type
+```
+
+```ts
+const announcement = "Hello World!";
+announcement.toLocaleLowercase();
+announcement.toLocalLowerCase(); // Sometimes, It is useful to catch 'typo',
+
+// or catching uncalled function
+
+function flipCoin() {
+  // Meant to be Math.random()
+  return Math.random < 0.5; //Operator '<' cannot be applied to types '() => number' and 'number'.
+}
+
+// or basic logic error
+
+const value = Math.random() < 0.5 ? "a" : "b";
+if (value !== "a") {
+  // ...
+} else if (value === "b") { // This condition will always return 'false' since the types '"a"' and '"b"' have no overlap.
+  // Oops, unreachable
+}
+
+```
