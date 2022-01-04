@@ -64,3 +64,51 @@ if (value !== "a") {
 }
 
 ```
+
+### tsc, the typeScript compiler
+tsc: the typescript compiler
+we need to install this.
+``npm install -g typescript``
+
+in case, we made some mistake, tsc will warn us, let's look at this example.
+
+```ts
+// This is an industrial-grade general-purpose greeter function:
+function greet(person, date) {
+  console.log(`Hello ${person}, today is ${date}!`);
+}
+ 
+greet("Brendan");
+```
+
+After we run ***ts hello.ts***, we will get error on the command line!
+
+``Expected 2 arguments, but got 1.``
+
+### Explicit Types
+
+Until now, we did not describe type.
+
+```ts
+function greet(person: string, date: Date) {
+  console.log(`Hello ${person}, today is ${date.toDateString()}!`);
+}
+```
+
+we added type annotations on person and date to describe what types of value greet can be called with.
+
+```ts
+greet("Maddison", Date());
+```
+
+Above code give an error, because Date() is returning string type, we should use like that:
+```js
+greet("Maddison", new Date());
+```
+
+Note:
+
+```ts
+// we don't always have to write explicit type annotations.
+ let msg = "hello there!";
+ ```
