@@ -112,3 +112,34 @@ wait(10*1000).then(() => saySomething("10 seconds")).catch(failureCallback);
 ```
 
 ### Composition
+***Promise.resolve()*** and ***Promise.reject()*** are shortcuts to manually create an already resolved or reject promise respectively.
+
+***Promise.all()*** and ***Promise.race()*** are two composition tools for running asynchronous operations in parallel.
+
+```js
+Promise.all([func1(), func2(), func3()])
+.then(([result1, result2, result3]) => { /* use result1, result2 and result3 */ });
+```
+
+Sequential composition is possible using some clever JS.
+
+```js
+[func1, func2, func3].reduce((p, f) => p.then(f), Promise.resolve())
+.then(result3 => { /* use result3 */ });
+```
+
+### Timing
+
+To avoid surprises, functions passed to ***then()*** will never be called synchronously, even with an already-resolved promise:
+
+```js
+Promise.resolve().then(() => console.log(2));
+console.log(1); // 1, 2
+```
+````js
+const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+wait(0).then(() => console.log(4));
+Promise.resolve().then(() => console.log(2)).then(() => console.log(3));
+console.log(1); // 1, 2, 3, 4
+```
