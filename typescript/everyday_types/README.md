@@ -322,4 +322,60 @@ type Window = {
 
 sometimes, we have already know type about a method or something.
 
-For example, if we are using ***document.querySelector***, TS only know that this will return ***HTMLElement***, but it might be return ***HTMLCanvasElement***
+For example, if we are using ***document.querySelector***, TS only know that this will return ***HTMLElement***, but it might be return ***HTMLCanvasElement***.
+
+In this situation, we can use ***type assertion*** ( as ):
+
+```ts
+const myCanvas = document.getElementById("main_canvas") as HTMLCanvasElement;
+```
+
+Like type annotation, types assertions are removed by the compiler and won't affect the runtime behavior of our code.
+
+also, we can use angle-bracket (<>) syntax:
+
+```ts
+const myCanvas = <HTMLCanvasElement>document.getElementById("main_canvas");
+```
+
+type assertions works more specific or less specific version of type. This rule prevents "impossible" coercions like:
+
+```ts
+const x = "hello" as number;
+/**
+Conversion of type 'string' to type 'number' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+*/
+```
+
+Sometimes this ***assertions*** is more complex and TS may not allow this. If this happens, we use two assertions, first to ***any*** or ***unknown***, then to target type.
+
+```ts
+const a = (expr as any) as T;
+```
+
+### Literal Types
+
+Beside ***string and number***, we can refer to specific strings and numbers in type positions.
+
+```ts
+let x: "hello" = "hello";
+// OK
+x = "hello";
+// ...
+x = "howdy";
+```
+
+## null and undefined
+
+Js jas two primitive types: ***null and undefined***.
+
+### Non-null assertion Operator (postfix !)
+
+Ts also has a special syntax for removing ***null*** and  ***undefined***:
+
+```ts
+function liveDangerously(x?: number | null) {
+  // No error
+  console.log(x!.toFixed());
+}
+```
