@@ -85,4 +85,17 @@ console.log(justCoffee.getCoffee());
 
 // Pre-define Function
 
+eval('console.log("zaa")') // execute string element
+// uneval('console.log("zaa")) // deprecated
+console.log(isFinite(25)) // return true
+console.log(isFinite('s')) // return false
+console.log(isFinite(Number.MAX_SAFE_INTEGER)) // return true
 
+// Decode URI
+
+const uri = 'https://mozilla.org/?x=шеллы';
+const encoded = encodeURI(uri);
+console.log(encoded);
+
+console.log(decodeURI(encoded));
+// ex
