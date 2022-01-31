@@ -81,3 +81,46 @@ Notice that each of these assignments is valid. Although the observed type of **
 
 let's try it out assign boolean.
 ![Narrowing Assignment](./img/narrowing_boolean.png "Assignment Narrowing")
+
+## Using type predicates ###
+
+If we want to control directly the type, to define a type-guard, we need to define a function hose return type is a ***type predicate***
+
+```ts
+function isFish(pet: Fish | Bird): pet is Fish {
+  return (pet as Fish).swim !== undefined;
+}
+```
+
+For above function ***pet is Function*** is our type predicate. A predicate takes the form ***parameterName is Type***, where ***parameterName*** must be the name of a parameter from the current function signature.
+
+
+Anytime ***isFish*** called with some variable, TS will narrow that variable tı specific type if the original type is compatible.
+
+```ts
+// Both calls to 'swim' and 'fly' are now okay.
+let pet = getSmallPet();
+ 
+if (isFish(pet)) {
+  pet.swim();
+} else {
+  pet.fly();
+}
+```
+
+Notice that TS no only knows that ***pet*** is a  ***Fish*** in the  ***if*** branch; it also knows that in the ***else*** branch, you don't have a ***Fish***, so we must have a ***bird***.
+
+we may use the type guard ***isFish*** to filter an array ***Fish | Bird*** and obtain an array of ***Fish***:
+
+```ts
+const zoo: (Fish | Bird)[] = [getSmallPet(), getSmallPet(), getSmallPet()];
+const underWater1: Fish[] = zoo.filter(isFish);
+// or, equivalently
+const underWater2: Fish[] = zoo.filter(isFish) as Fish[];
+ 
+// The predicate may need repeating for more complex examples
+const underWater3: Fish[] = zoo.filter((pet): pet is Fish => {
+  if (pet.name === "sharkey") return false;
+  return isFish(pet);
+});
+```
