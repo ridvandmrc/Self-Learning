@@ -124,3 +124,8 @@ const underWater3: Fish[] = zoo.filter((pet): pet is Fish => {
   return isFish(pet);
 });
 ```
+
+## SUMMARY
+* if we check type with classic JS method (typeof, instance of) it called ***type guard***.
+* after we check type in first branch, for other branch TS apply ***type narrowing*** 
+* we are using ***type predicate*** to control type directly.
