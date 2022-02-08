@@ -198,3 +198,123 @@ function greet(s: string) {
 
 
 ### Optional Parameters
+
+Functions in JS often take a variable number of arguments. Also, sometimes we can make a paramater as optional by using ***?***.
+
+```ts
+function f(x?: number) {
+  // ...
+}
+f(); // OK
+f(10); // OK
+```
+
+Although the parameter is specified as type ***number***, the x parameter will actually have the type ***number | undefined*** because unspecified parameters in JS get value ***undefined***.
+
+we can provide default parameter.
+
+```ts
+function f(x = 10) {
+  // ...
+}
+```
+
+### Function Overloads
+Some times we want to have variation of same function. To provide this we need to ***overload*** function.
+
+In order to overload a function, we need to change function signature:
+* paramater count
+* paramater type
+* paramater order
+
+let's look at the TS example:
+
+```ts
+function makeDate(timestamp: number): Date;
+function makeDate(m: number, d: number, y: number): Date;
+function makeDate(mOrTimestamp: number, d?: number, y?: number): Date {
+  if (d !== undefined && y !== undefined) {
+    return new Date(y, mOrTimestamp, d);
+  } else {
+    return new Date(mOrTimestamp);
+  }
+}
+const d1 = makeDate(12345678);
+const d2 = makeDate(5, 5, 5);
+const d3 = makeDate(1, 3); // give an error due to not have like this function
+```
+
+### Overload signature and the implementation signature
+
+user can see the signature they can not see the body of function.
+
+```ts
+function fn(x: string): void;
+function fn() {
+  // ...
+}
+// Expected to be able to call with zero arguments
+fn();
+```
+
+signature must be ***compatible*** with overload signatures.
+
+```ts
+function fn(x: boolean): void;
+// Argument type isn't right
+function fn(x: string): void;
+// This overload signature is not compatible with its implementation signature.
+function fn(x: boolean) {}
+
+function fn(x: string): string;
+// Return type isn't right
+function fn(x: number): boolean;
+//This overload signature is not compatible with its implementation signature.
+function fn(x: string | number) {
+  return "oops";
+}
+```
+
+### Writing Good Overloads
+
+Like generics, there are a few guidelines we should follow when using function overload.
+
+let's think about this function.
+
+```ts
+function len(s: string): number;
+function len(arr: any[]): number;
+function len(x: any) {
+  return x.length;
+}
+```
+
+This function seems fine but what about conditional case ? 
+
+```ts
+len(""); // OK
+len([0]); // OK
+len(Math.random() > 0.5 ? "hello" : [0]); /* error Argument of type 'number[] | "hello"' is not assignable to parameter of type 'string'.
+      Type 'number[]' is not assignable to type 'string'.*/
+
+// this would be better solution 
+function len(x: any[] | string) {
+  return x.length;
+}
+```
+
+### Declaring ***this*** in a Function
+Some case we should have ***this*** attribute, TS allow us to manage it
+
+```ts
+interface DB {
+  filterUsers(filter: (this: User) => boolean): User[];
+}
+ 
+const db = getDB();
+const admins = db.filterUsers(function (this: User) {
+  return this.admin;
+});
+```
+
+### Other Types to Know About
