@@ -107,5 +107,94 @@ const notOK = longest(10, 100);
 
 * Finally, the call to **longest(10, 100)** is rejected because the **number** type doesn't have a **.length** property.
 
-### Working with constrained Value
+### Specifying Type Arguments
 
+typescript can usually infer the intended type arguments in a generic call, but not always. let's think this function.
+
+```ts
+function combine<Type>(arr1: Type[], arr2: Type[]): Type[] {
+  return arr1.concat(arr2);
+}
+```
+it wold be an error to call mismatched arrays:
+
+```ts
+const arr = combine([1, 2, 3], ["hello"]);
+
+// string is not assignable to type 'number'
+}
+```
+
+if we want to remove this error, we can manage it specify ***Type***:
+
+```ts
+const arr = combine<string | number>([1, 2, 3], ["hello"]);
+```
+
+### Guidelines for writing Good Generic Functions
+
+Writing a generic functions is fun, and it can be easy to ger carried away with type parameters.
+
+#### Push Type Parameters Down
+
+```ts
+function firstElement1<Type>(arr: Type[]) {
+  return arr[0];
+}
+ 
+function firstElement2<Type extends any[]>(arr: Type) {
+  return arr[0];
+}
+ 
+// a: number (good)
+const a = firstElement1([1, 2, 3]);
+// b: any (bad)
+const b = firstElement2([1, 2, 3]);
+```
+
+firstElement1 is much better because TS inferred return ***Type***. firstElement2's infered return type is ***any***.
+
+#### Use Fewer Type Parameters
+
+```ts
+function filter1<Type>(arr: Type[], func: (arg: Type) => boolean): Type[] {
+  return arr.filter(func);
+}
+ 
+function filter2<Type, Func extends (arg: Type) => boolean>(
+  arr: Type[],
+  func: Func
+): Type[] {
+  return arr.filter(func);
+}
+```
+
+We've created a type parameter ***Func*** that relate two values. This is a always red flag, it means callers wanting to specify type of arguments have to manually specify an extra type argument. ***Func*** doesn't do anything but make the function harder to read.
+
+``Always use a few parameters as possible``.
+
+#### Type Parameters Should Appear Twice
+
+Sometimes we forget that a function might not need to be generic:
+
+```ts
+function greet<Str extends string>(s: Str) {
+  console.log("Hello, " + s);
+}
+ 
+greet("world");
+
+// it is equal 
+function greet(s: string) {
+  console.log("Hello, " + s);
+}
+
+```
+
+### As A Summary
+* Push type Paramaters Down (don't extends from any)
+* Use fewer Type Paramaters
+* Type paramaters should Appear twice
+
+
+### Optional Parameters
