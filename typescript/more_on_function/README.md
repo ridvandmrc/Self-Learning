@@ -318,3 +318,96 @@ const admins = db.filterUsers(function (this: User) {
 ```
 
 ### Other Types to Know About
+
+#### ***Void***
+***void*** represents the return value of function which don't return a value. it's infrred type any time.
+
+and also ***void*** and ***undefined*** referred same thing..
+
+#### ***Object***
+
+The special type ***Object*** refers to any value that isn't primitive.
+
+``object is not Object, use object``
+
+### ***unknown***
+The ***uknown*** type represents any value. This is similar to ***any*** type, but is safer because it's not legal to do anything.
+
+```ts
+function f1(a: any) {
+  a.b(); // OK
+}
+function f2(a: unknown) {
+  a.b(); // Object is of type 'unknown'.
+
+```
+
+we can use ***unknown*** to describe that accept any value .
+
+```ts
+function safeParse(s: string): unknown {
+  return JSON.parse(s);
+}
+ 
+// Need to be careful with 'obj'!
+const obj = safeParse(someRandomString);
+```
+
+### ***never***
+
+Some functions ***never*** return a value:
+
+```ts
+function fail(msg: string): never {
+  throw new Error(msg);
+}
+```
+
+## Rest Parameters and arguments
+
+### Rest Parameters
+
+We can also define functions that take an ***unbounded*** number of arguments using.
+
+A rest parameter appears after all other parameters, and uses the ***...*** syntax:
+
+```ts
+function multiply(n: number, ...m: number[]) {
+  return m.map((x) => n * x);
+}
+// 'a' gets value [10, 20, 30, 40]
+const a = multiply(10, 1, 2, 3, 4);
+```
+
+### Rest Arguments
+
+we can provide a variable number of arguments from an array using the spread syntax.
+
+```ts
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+arr1.push(...arr2);
+```
+
+Note:
+  we can do array immutable by using ***const***.
+
+```ts
+// Inferred as 2-length tuple
+const args = [8, 5] as const;
+// OK
+const angle = Math.atan2(...args);
+```
+
+## Parameter Destructuring
+
+```ts
+function sum({ a, b, c }) {
+  console.log(a + b + c);
+}
+sum({ a: 10, b: 3, c: 9 });
+// ------------------------
+function sum({ a, b, c }: { a: number; b: number; c: number }) {
+  console.log(a + b + c);
+}
+```
