@@ -411,3 +411,28 @@ function sum({ a, b, c }: { a: number; b: number; c: number }) {
   console.log(a + b + c);
 }
 ```
+
+## =======> SUMMARY
+* Simplest way to define function: ***(a:string) => void***
+* using alias ***type fn = (a:string) => void***
+* If we want to correspandence between two values. We should use.
+* Constraints: we can constraint the type by using ***extends***
+```ts
+function longest<Type extends { length: number }>(a: Type, b: Type) {
+```
+* For good Generic function
+  * Push type parameters down (do not use any)
+  * Use fewer type parameters
+  * prevent overkill, use generic if type appear more than one
+
+* Function Overloads, function signature
+  * parameter count
+  * parameter types
+  * parameter order
+```ts
+function makeDate(timestamp: number): Date;
+function makeDate(m: number, d: number, y: number): Date;
+function makeDate(mOrTimestamp: number, d?: number, y?: number): Date {
+```
+* for overloding functions shoud be compatable each other 
+* user do not know body implemantation, they only now signature

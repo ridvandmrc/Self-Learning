@@ -19,7 +19,8 @@ Content of this repository
 * ***[TypeScript](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript)***
     * [Basic](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/Basic)
     * [Everyday Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/everyday_types)
-    * [Narrowing](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/Narrowing)
+    * [Narrowing](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/Narrowing)    
+    * [More on Function](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/more_on_function)
 
 * ***[css](https://github.com/ridvandmrc/Self-Learning/tree/main/css)***
     * [Introduction](https://github.com/ridvandmrc/Self-Learning/tree/main/css/introduction)
