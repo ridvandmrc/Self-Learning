@@ -1,5 +1,7 @@
 Content of this repository
 
+* ***[Web APIs](#)***
+
 * ***[Javascript](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript)***
     * [Grammar and Types](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript/grammer_and_types)
     * [Control Flow and Error Handling](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript/Control_flow_error_handling)
@@ -22,6 +24,7 @@ Content of this repository
     * [Everyday Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/everyday_types)
     * [Narrowing](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/Narrowing)    
     * [More on Function](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/more_on_function)
+    * [Object Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/Object%20Types)
 
 * ***[css](https://github.com/ridvandmrc/Self-Learning/tree/main/css)***
     * [Introduction](https://github.com/ridvandmrc/Self-Learning/tree/main/css/introduction)
