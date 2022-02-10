@@ -13,4 +13,4 @@ Content of this section:
 * [Promises](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript/Using%20Promises)
 * [Meta Programming](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript/Meta_Programming)
 * [Javascript Modules](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript/javascript_modules)
-* [Inheritance and Prototype chain](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript/Inheritance_prototype)
+* [Advanced](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript/advanced)
