@@ -386,3 +386,80 @@ function doSomething(pair: readonly [string, number]) {
 // Cannot assign to '0' because it is a read-only property.
 }
 ```
+## =====> Summary
+* we can mark property as ***readonly***
+* when we don't name of property, but shape of data known we can use ***index signature*** ([index:number]: string;)
+```ts
+interface StringArray {
+  [index: number]: string;
+}
+ 
+const myArray: StringArray = getStringArray();
+const secondItem = myArray[1];
+```
+
+* we can make dictionary by using ***index signature***.
+* Extends of the type, basically we can use ***extends** keyword.
+```ts
+interface BasicAddress {
+  name?: string;
+  street: string;
+  city: string;
+  country: string;
+  postalCode: string;
+}
+ 
+interface AddressWithUnit extends BasicAddress {
+  unit: string;
+}
+```
+* To providing intersection, we can use ***&***,
+
+```ts
+interface Colorful {
+  color: string;
+}
+interface Circle {
+  radius: number;
+}
+ 
+type ColorfulCircle = Colorful & Circle;
+```
+
+* We should always push down type so we should not use ***any***,
+* we should always think generic types
+```ts
+interface Box<Type> {
+ contents: Type;
+}
+interface StringBox {
+ contents: string;
+}
+
+let boxA: Box<string> = { contents: "hello" };
+boxA.contents;
+```
+* Array types, number [] shordhands for Array< number >.
+* ***ReadonlyArray*** type
+```ts
+function doStuff(values: ReadonlyArray<string>) {
+  // We can read from 'values'...
+  const copy = values.slice();
+  console.log(`The first value is ${values[0]}`);
+ 
+  // ...but we can't mutate 'values'.
+  values.push("hello!");
+// Property 'push' does not exist on type 'readonly string[]'.
+}
+```
+* ***Tuple*** is array pair
+```ts
+type Either2dOr3d = [number, number, number?];
+ 
+function setCoordinate(coord: Either2dOr3d) {
+  const [x, y, z] = coord;
+              
+const z: number | undefined
+ 
+  console.log(`Provided coordinates had ${coord.length} dimensions`); // length : 2 | 3
+```
