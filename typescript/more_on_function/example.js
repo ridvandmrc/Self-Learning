@@ -46,3 +46,27 @@ var getData = function (e) {
 };
 console.log(getData({ detail: 5 }));
 // function overload
+// we want to create variation of same function
+// parameter count
+// parameter type
+// parameter order
+var makeDate = function (timestamp) {
+    return new Date(timestamp);
+};
+function makeDateOverride(timeStamp, day, month, year) {
+    if (day && month && year)
+        return new Date(day, month, year);
+    return new Date(timeStamp);
+}
+console.log(makeDateOverride(2, 2, 2021));
+var Arr = /** @class */ (function () {
+    function Arr() {
+        this.data = [1, 2, 3];
+    }
+    Arr.prototype.reverseIterate = function (element) {
+        console.log(element);
+    };
+    return Arr;
+}());
+var arr2 = new Arr();
+arr2.reverseIterate();

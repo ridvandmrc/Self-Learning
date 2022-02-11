@@ -56,3 +56,65 @@ const getData = <T extends { detail: U }, U>(e: T): U => {
 console.log(getData({ detail: 5 }));
 
 // function overload
+
+// we want to create variation of same function
+// parameter count
+// parameter type
+// parameter order
+
+const makeDate = (timestamp: number): Date => {
+  return new Date(timestamp);
+};
+
+// if we want to make date with (dd,mm,yyy), we should override it
+
+function makeDateOverride(timeStamp: number): Date; // this is signature
+function makeDateOverride(day: number, month: number, year: number): Date; // this is signature
+function makeDateOverride(
+  timeStamp?: number,
+  day?: number,
+  month?: number,
+  year?: number
+): Date {
+  if (day && month && year) return new Date(day, month, year);
+  return new Date(timeStamp);
+}
+
+console.log(makeDateOverride(2, 2, 2021));
+
+// currently, overload is not using , we can use union type
+
+// Declaring this in Function
+
+interface IArr {
+  reverseIterate(element: (this) => void): void;
+}
+
+class Arr<T> implements IArr {
+  reverseIterate(element?: (this) => void): void {
+    console.log(element);
+  }
+
+  data = [1, 2, 3];
+}
+
+const arr2 = new Arr();
+
+arr2.reverseIterate();
+
+// unknown: is safer than any, it provide type check
+
+const f1 = (a: any): void => {
+  a.b(); // OK For any type
+};
+
+const f2 = (a: unknown): void => {
+  // a.b(); // not OK
+};
+
+// immutable array
+// we can provide is by using as const
+
+const arr1 = [1, 3, 5] as const;
+
+// Learn function attributes
