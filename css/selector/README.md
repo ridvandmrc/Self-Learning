@@ -51,3 +51,84 @@ p {
     color: red;
 }
 ```
+
+* we can also select tag and class
+
+``
+In this example only <p> elements with class="center" will be red and center aligned:
+``
+
+```css
+p.center {
+    text-align: center;
+    color: red;
+}
+```
+
+```html
+<h1 class="center"> h1 </h1> <!-- this is not affected !-->
+<p class="center"> p </p>  <!-- this is not affected !-->
+```
+
+* Also HTML element can take more than one class, but the latest one override previous.
+
+```css
+p.center {
+    text-align: center;
+    color: blue;
+}
+
+p.color {
+    color: red;
+}
+```
+
+```html
+<h1 class="center"> h1 </h1> <!-- this is not affected !-->
+<p class="center"> p </p>  <!-- this p is center align and color blue-->
+<p class="center color"> p </p>  <!-- this p is center but color is red !-->
+
+```
+
+### The cSS Universal Selector
+
+The universal selector (*) selects all HTML elements on the page.
+
+``
+The  CSS rule below will affect every HTML element on the page
+``
+
+```css
+* {
+  text-align: center;
+  color: blue;
+}
+```
+### The CSS Grouping Selector
+
+* The grouping selector selects all the HTML Elements with the same style definitions.
+
+* To group selectors, separate each selector with a comma. 
+
+```css
+h1, h2, p {
+    text-align: center;
+    color: red;
+}
+```
+
+* Above selector select all h1, h2 and p selector.
+
+## ====> SUMMARIZE until now
+* select element has a specific class
+   ```css
+    p.center {...}
+   ```
+* use '*' for select all element in page.
+* to group css selector, use comma for each tags
+```css
+h1, h2, p {
+    text-align: center;
+    color: red;
+}
+```
