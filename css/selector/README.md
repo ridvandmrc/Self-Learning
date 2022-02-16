@@ -132,3 +132,19 @@ h1, h2, p {
     color: red;
 }
 ```
+
+----------------------
+
+### Combinators Selector
+
+``
+A combinator is something that explains the relationship between the selectors.
+``
+
+* A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+
+There are four different combinators in CSS:
+* descant selector (space)
+* child selector (>)
+* adjacent sibling selector (+)
+* general sibling selector (~)
