@@ -264,3 +264,52 @@ div ~ p {
 <code>Some code.</code>
 <p>Paragraph 4.</p> <!-- selected -->
 ```
+
+### ===> Summarize Until Now
+* Use space for descant selector 
+```css
+div p {
+  color: red;
+}
+```
+* Use '>' for child selector
+```css
+div > p {
+  color: blue;
+}
+
+<div>
+  <p> asd </p> /* this is child of div  */
+  <h1>
+    <p> asd </p> /* this is not a child, but this is descant  */
+  </h1>
+</div>
+```
+* Use '+' for adjacent sibling selector
+
+```css
+div + p{
+  color: red;
+}
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p> /* not selected, child and descant */
+</div>
+
+<p>Paragraph 3. After a div.</p> /* selected, adjacent  */
+```
+* Use '~' for general sibling selector
+```css
+div ~ p {
+  color: red;
+}
+
+<p> not selected </p>
+<div>
+  <p> not selected </p>
+</div>
+
+<p> selected </p>
+<p> selected </p>
+```
