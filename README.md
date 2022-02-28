@@ -29,4 +29,9 @@ Content of this repository
 * ***[css](https://github.com/ridvandmrc/Self-Learning/tree/main/css)***
     * [Introduction](https://github.com/ridvandmrc/Self-Learning/tree/main/css/introduction)
     * [Selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector)
+        * [Simple Selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector/simple_selector)
+        * [Combinator Selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector/combinator_selector)
+        * [Pseudo-class Selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector/pseudo_class_selector)
+        * Pseudo-elements selectors
+        * Attribute selector
 
