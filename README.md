@@ -33,5 +33,5 @@ Content of this repository
         * [Combinator Selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector/combinator_selector)
         * [Pseudo-class Selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector/pseudo_class_selector)
         * [Pseudo-elements selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector/pseudo_elements_selector)
-        * Attribute selector
+        * [Attribute selector](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector/attribute_selector)
 
