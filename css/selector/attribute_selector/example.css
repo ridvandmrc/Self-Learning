@@ -1,0 +1,27 @@
+div[first] {
+  color: red;
+}
+
+div[color="blue"] { /* directly equal  */
+  color: blue;
+}
+
+div[info~="info"] { /* space separated  */
+  color: pink;
+}
+
+div[info|="info"] { /* hyphen(-) separated  */
+  color: cyan;
+}
+
+div[start^="info"] { /* start with  */
+  color: darkcyan;
+}
+
+div[end$="info"] { /* end with */
+  color: darkgoldenrod;
+}
+
+div[contain*="info"] { /* contain */
+  color: darkgreen;
+}

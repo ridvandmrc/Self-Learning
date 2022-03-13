@@ -1,0 +1,18 @@
+div.first-line::first-line {
+  color: gray;
+  font-weight: bold;
+}
+div.first-line::first-letter {
+  font-size: 50px;
+}
+
+div.kitchen-list li {
+  margin-left: 10px;
+}
+
+div.kitchen-list ul > li::marker {
+  content: url(https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-16.png);
+  width: 100px;
+  height: 10px;
+  color: red;
+ }

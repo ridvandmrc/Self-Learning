@@ -1,0 +1,34 @@
+p {
+  background-color: yellow;
+  color: red;
+}
+
+#id-selector {
+  background-color: black;
+  color: orange;
+}
+
+.class-selector {
+  background-color: black;
+  color: white;
+}
+
+p.tag-and-class {
+  background-color: red;
+  color: yellow;
+}
+p#tag-and-id {
+  background-color: yellow;
+  color: red;
+}
+
+* {
+  color: blue; /* Global selector */
+}
+
+h1,
+h2,
+h3 {
+    color:gray;
+    background-color: black;
+}

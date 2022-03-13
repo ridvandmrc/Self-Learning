@@ -1,0 +1,21 @@
+div.descant p {
+  color: red;
+
+  background: white;
+}
+
+div > p {
+  color: gray;
+  background: black;
+}
+
+div + p {
+  color: pink;
+  background-color: black;
+}
+
+.main-element ~ span {
+  display: block;
+  color: purple;
+  background-color: black;
+}

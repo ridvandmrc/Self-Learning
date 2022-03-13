@@ -1,0 +1,45 @@
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:active {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+span.tooltip::after {
+  display: none;
+  content: "looo";
+}
+
+span.tooltip:hover::after {
+  display: block;
+}
+
+div.todo-list {
+  color: pink;
+}
+
+div:first-child {
+  color: red;
+}
+div:nth-child(2) {
+  color: purple;
+}
+
+p::selection {
+  color: white;
+}
+
+p::first-letter {
+  font-size: 80px;
+}
