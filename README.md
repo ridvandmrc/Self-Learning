@@ -25,6 +25,7 @@ Content of this repository
     * [Narrowing](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/Narrowing)    
     * [More on Function](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/more_on_function)
     * [Object Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/Object%20Types)
+    * [Type Manipulation](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation)
 
 * ***[css](https://github.com/ridvandmrc/Self-Learning/tree/main/css)***
     * [Introduction](https://github.com/ridvandmrc/Self-Learning/tree/main/css/introduction)
