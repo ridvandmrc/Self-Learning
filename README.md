@@ -1,6 +1,9 @@
 Content of this repository
 
 * ***[Web APIs](#)***
+    * [Selectors](#)
+    * [Events](#)
+    * [Observers](#)
 
 * ***[Javascript](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript)***
     * [Grammar and Types](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript/grammer_and_types)
@@ -26,6 +29,13 @@ Content of this repository
     * [More on Function](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/more_on_function)
     * [Object Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/Object%20Types)
     * [Type Manipulation](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation)
+        * [Generics](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/generics)
+        * [Keyof](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/keyof_type)
+        * [typeof](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/typeof)
+        * [indexed access](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/indexed_access_type)
+        * [conditional Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/conditional_type)
+        * [Mapper Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/mapped_types)
+        * [Template Literal Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/template_literal_types) 
 
 * ***[css](https://github.com/ridvandmrc/Self-Learning/tree/main/css)***
     * [Introduction](https://github.com/ridvandmrc/Self-Learning/tree/main/css/introduction)
