@@ -12,3 +12,4 @@ Content of this Section:
     * [conditional Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/conditional_type)
     * [Mapper Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/mapped_types)
     * [Template Literal Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/template_literal_types) 
+* [Classes](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/classes)
