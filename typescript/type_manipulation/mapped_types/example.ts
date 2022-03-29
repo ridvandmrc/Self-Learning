@@ -29,3 +29,41 @@ const foo: FeatureOptions = { darkMode: true, newUserProfile: false }
 // ? same sample => type loo = Record<keyof FeatureFlags, boolean>
 
 // ! Mapping modifier
+// * we have two modifier readonly and ' ? '
+// * we can remove or add with '+' or '-'
+
+type CreateMutableType<Type> = {
+  -readonly [Prop in keyof Type]: Type[Prop]
+}
+
+// short-way Partial<Record<keyof Type, string>>
+
+type makeAllOptional<Type> = {
+  [Property in keyof Type]+?: Type[Property]
+}
+
+// ! use AS for re-mapping
+
+/*  
+type MapToNewProperty<Type> = {
+  [Prop in keyof Type as NewKeyType]: Type[Prop]
+}
+ */
+
+type GettersType<Type> = {
+  [Prop in keyof Type as `get${Capitalize<string & Prop>}` ]:() => Type[Prop]
+}
+
+interface Person {
+  name:string;
+  age:number;
+  location:string;
+}
+
+type LazyPerson = GettersType<Person>
+
+// ! Or we can filter
+
+type RemoveKindField<Type> = {
+  [Property in keyof Type as Exclude<Property,"kind">]:Type[Property]
+}
