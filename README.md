@@ -46,4 +46,6 @@ Content of this repository
         * [Pseudo-class Selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector/pseudo_class_selector)
         * [Pseudo-elements selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector/pseudo_elements_selector)
         * [Attribute selector](https://github.com/ridvandmrc/Self-Learning/tree/main/css/selector/attribute_selector)
-
+* **[scss](https://github.com/ridvandmrc/Self-Learning/tree/main/scss)**
+    * [Overview](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/overview)
+    * Style Rules
