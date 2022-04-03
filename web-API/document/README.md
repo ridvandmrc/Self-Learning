@@ -125,4 +125,135 @@ Symbol(Symbol.toPrimitive): undefined
  ```
 
  ## Methods
- * 
+ * This interface also inherits from the Node and EventTarget interfaces.
+ * we can use these methods document.methodName
+
+ ### Document.append()
+ * insert a set of **Node** or **DomString** objects after last child
+
+```js
+const div1 =  document.createElement('div')
+const div2 =  document.createElement('div')
+
+document.append(div1,div2)
+``` 
+
+### Document.createElement()
+* create a new element with given tag name and namespace URI.
+
+```js
+const el = document.createElement('div')
+const btn = document.createElement('button')
+```
+
+### Document.getElementById()
+* returns an object reference to the identified element
+```js
+const el = document.getElementById('testId')
+// returns element that id equals 'testId'
+```
+
+### Document.getElementsByClassName()
+* return a list of elements with the given class name.
+```js
+const el = document.getElementsByClassName('active')
+// select All elements that has active class
+```
+
+### Document.getElementsByTagName()
+* return a list of elements with given tag name
+```js
+const allButtonElements = document.getElementsByTagName('button')
+// return all button elements
+```
+
+### Document.prepend()
+* Inserts a set of **Node** objects before first child of the document
+
+```js
+document.getElementById('first').prepend(document.createElement('button'))
+```
+
+## Some Important Events
+* we can listen these event by using **addEventListener**
+
+### scroll
+* fired when the document view or an element has been scrolled.
+```js
+document.addEventListener('scroll',()=>{
+    console.log('scroll')
+})
+// triggered when scrolling
+```
+
+### wheel
+* fired when user rotates a wheel button on a pointing device (typically a mouse).
+```js
+document.addEventListener('wheel',()=>{
+    console.log('wheel')
+})
+// triggered when scrolling by wheel
+```
+
+## Clipboard Events
+
+### copy
+* fired when the user initiates a copy action 
+
+```js
+document.addEventListener('copy',()=>{
+    console.log('copy by using ctrl + c or mouse)
+})
+```
+
+### cut
+* fired when the user initiates a copy action 
+
+```js
+document.addEventListener('cut',()=>{
+    console.log('cut by using ctrl + x or mouse)
+})
+```
+
+### paste
+* fired when the user initiates a copy action 
+
+```js
+document.addEventListener('paste',()=>{
+    console.log('paste by using ctrl + v or mouse)
+})
+```
+ 
+ ## Selection Events
+
+ ### Selectionchange
+ * fired when the document selection change
+ ```js
+ document.addEventListener('selectionchange',()=>{
+     console.log('selection Change')
+ })
+
+ // triggered when keep selecting 
+ ```
+
+ ### Selectstart
+ * fired when user begins a new selection
+
+ ```js
+ document.addEventListener('selectstart',()=>{
+     console.log('select start')
+ })
+ ```
+
+ ## =====> Summary
+ Some Important attributes
+ * activeElement
+ * documentElement
+ * location
+ * Url
+ * prepend
+ * scroll
+ * wheel
+ * copt, cut, paste
+ * selectionchange
+ * selectstart
