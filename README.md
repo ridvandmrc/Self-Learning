@@ -2,6 +2,7 @@ Content of this repository
 
 * ***[Web APIs](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API)***
     * [Selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/selectors)
+    * [Documents](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/document)
     * [Events](#)
     * [Observers](#)
 
