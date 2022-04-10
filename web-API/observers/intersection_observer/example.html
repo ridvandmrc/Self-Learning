@@ -1,0 +1,47 @@
+<script>
+  function loadData() {
+    let endIndis = 200;
+    const cars = ["volvo", "saab", "opel", "audi"];
+    const elements = [...Array(10000)].map((_, indis) => {
+      const option = document.createElement("div");
+      option.value = cars[indis % cars.length];
+      option.style.height = "100px";
+      option.style.borderBottom = "1px solid gray";
+      option.innerHTML = cars[indis % cars.length] + " " + indis;
+      return option;
+    });
+    const selectElement = document.querySelector("div");
+    const intersectionObserver = new IntersectionObserver(
+      (entry) => {
+        if (entry[0].intersectionRatio > 0) {
+          intersectionObserver.unobserve(
+            selectElement.querySelector("div:last-child")
+          );
+          console.log("entry: ", entry);
+          elements.splice(++endIndis, 200).forEach((el) => {
+            selectElement.appendChild(el);
+          });
+
+          intersectionObserver.observe(
+            selectElement.querySelector("div:last-child")
+          );
+        }
+      },
+      { threshold: 1 }
+    );
+
+    elements.splice(0, endIndis).map((_, indis) => {
+      const option = document.createElement("div");
+      option.value = cars[indis % cars.length];
+      option.style.height = "100px";
+      option.style.borderBottom = "1px solid gray";
+      option.innerHTML = cars[indis % cars.length] + " " + indis;
+      selectElement.appendChild(option);
+    });
+
+    intersectionObserver.observe(selectElement.querySelector("div:last-child"));
+  }
+</script>
+
+<div style="height: 500px; overflow: auto" name="cars" id="cars"></div>
+<button onclick="loadData()">Load Data</button>
