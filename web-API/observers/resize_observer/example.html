@@ -1,0 +1,42 @@
+<head>
+  <script>
+    function onLoad() {
+      console.log("page loaded");
+      const observer = new ResizeObserver((entries) => {
+        const element = entries[0].target;
+        const { width } = element.getBoundingClientRect();
+        if (width < 500) {
+          element.style.border = "3px dashed red";
+          element.style.color = "red";
+        } else if (width > 1000) {
+          element.style.border = "3px dashed red";
+          element.style.color = "red";
+        } else {
+          element.style.border = "1px solid green";
+          element.style.color = "green";
+        }
+      });
+      observer.observe(document.querySelector(".page-wrapper"));
+    }
+  </script>
+  <style>
+    .page-wrapper {
+      display: flex;
+      width: 500px;
+      height: 500px;
+      border: 1px solid red;
+      resize: both;
+      overflow: auto;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body onload="onLoad()">
+  <div class="page-wrapper">
+      Arrange size of content
+      <br /> <br />
+      &nbsp;&nbsp; color will be change when element-width; <br />
+      &nbsp;&nbsp;500px and > 1000px ===> red <br />
+      &nbsp;&nbsp;others ====> green <br />
+  </div>
+</body>

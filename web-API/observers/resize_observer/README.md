@@ -21,3 +21,5 @@ const resizeObserver = new ResizeObserver(entries => {
 
 resizeObserver.observe(document.querySelector('div'))
 ```
+
+![](./resize_observer.gif)
