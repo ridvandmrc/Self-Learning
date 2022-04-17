@@ -1,0 +1,76 @@
+<head>
+  <style>
+    .button {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    .copy {
+      background-color: #008cba;
+    } /* Blue */
+    .error {
+      background-color: #f44336;
+    } /* Red */
+  </style>
+  <script>
+    function onLoad() {
+      document.addEventListener("customButton", (e) => {
+        // customEvent.detail: returns any data passed when dispatching event,
+        console.log("Custom Event detail: ", e.detail);
+        console.log("Custom event timestamp: ", e.timeStamp);
+        console.log("Custom event type: ", e.type);
+      });
+
+      document.addEventListener("errorButton", (e) => {
+        // errorEvent.message: returns any data passed when dispatching event
+        // errorEvent.lineno: // number of error line
+        console.log("Error event type: ", e);
+        console.log("Error Event detail: ", e.message);
+        console.log("Error event timestamp: ", e.timeStamp);
+        console.log("Error event type: ", e.type);
+      });
+
+      document.addEventListener("copy", (e) => {
+        console.log("copy event: ", e);
+        e.clipboardData.setData("text/plain", "Test string");
+        e.preventDefault();
+      });
+    }
+
+    function customClick(e) {
+      document.dispatchEvent(
+        new CustomEvent("customButton", { detail: "custom event" })
+      );
+    }
+
+    function errorClick() {
+      document.dispatchEvent(
+        new ErrorEvent("errorButton", {
+          message: "Error event dispatched",
+          lineno: 45,
+        })
+      );
+    }
+
+    function copyClick() {
+      document.execCommand("copy");
+    }
+  </script>
+</head>
+
+<body onload="onLoad()">
+  <button onclick="customClick()" class="button">
+    <span>Custom Event</span>
+  </button>
+  <button onclick="errorClick()" class="button error">Error Event</button>
+  <button onclick="copyClick()" class="button copy">
+    Copy ('test String')
+  </button>
+</body>
