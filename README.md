@@ -4,7 +4,7 @@ Content of this repository
     * [Selectors](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/selectors)
     * [Documents](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/document)
     * [Events](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/events)
-    * [Observers](#)
+    * [Observers](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/observers)
 
 * ***[Javascript](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript)***
     * [Grammar and Types](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript/grammer_and_types)

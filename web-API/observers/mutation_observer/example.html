@@ -1,0 +1,55 @@
+<head>
+  <script>
+    function onLoad() {
+      const observeWrapper = new MutationObserver((entries) => {
+        entries.forEach((record) => {
+          if (record.type === "childList" && record.removedNodes.length) {
+            record.removedNodes.forEach((node) => {
+              console.log("removed node: ", node);  // track child nodes
+            });
+          } else if (record.type === "characterData") {
+            console.log("replaced text: ", record.target.nodeValue); // track text of node
+          }
+        });
+      });
+
+      observeWrapper.observe(document.querySelector("div.list-wrapper"), {
+        attributes: true,
+        childList: true,
+        subtree: true,
+        characterData: true,
+      });
+    }
+  </script>
+  <style>
+    div.list-wrapper {
+      width: 500px;
+      height: 250px;
+      border: 1px red solid;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    div.list-wrapper > div {
+      padding: 15px;
+      background-color: antiquewhite;
+    }
+
+    div + div {
+      border-top: 1px solid gray;
+    }
+
+    div + div:nth-child(2n) {
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+
+<body onload="onLoad()">
+  <div class="list-wrapper">
+    <div>element 1</div>
+    <div>element 2</div>
+    <div>element 3</div>
+    <div>element 4</div>
+  </div>
+</body>
