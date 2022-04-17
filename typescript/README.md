@@ -13,3 +13,4 @@ Content of this Section:
     * [Mapper Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/mapped_types)
     * [Template Literal Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/template_literal_types) 
 * [Classes](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/classes)
+* [Reference](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/reference)

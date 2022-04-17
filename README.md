@@ -38,6 +38,7 @@ Content of this repository
         * [Mapper Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/mapped_types)
         * [Template Literal Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/template_literal_types) 
     * [Classes](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/classes)
+    * [Reference](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/reference)
 
 * ***[css](https://github.com/ridvandmrc/Self-Learning/tree/main/css)***
     * [Introduction](https://github.com/ridvandmrc/Self-Learning/tree/main/css/introduction)
