@@ -31,58 +31,7 @@ display: list-item;
 
 ![](./block-inline-inlineBlock.png)
 
-### display: flex
+### [display: flex](https://github.com/ridvandmrc/Self-Learning/tree/main/css/display/flex)
 * Display an element as a block container
 * it provides flexibility to arrange child elements
 ![](./display-flex.png)
-
-### some flex properties
-#### **flex**
-* we can arrange length of content
-
-```html
-<style>
-.container {
-  background-color:red;
-  display:flex;
-}
-
-.container > .item {
-  background-color: yellow;
-  flex:1; /* this provides to shown same length  */
-}
-</style>
-
-<body>
-  <div class="container">
-    <div class="item">item 1 </div> <!-- it will shown same length -->
-    <div class="item">item 2 </div>
-  </div>
-
-</body>
-```
-
-* The **flex** property is a shorthand property for: (it will be looked up later)
-    * flex-grow
-    * flex-shrink
-    * flex-basis
-* Also, we can use percentage for flex
-```css
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex-item-left {
-  flex: 50%;
-}
-
-.flex-item-right {
-  flex: 50%;
-}
-```
-
-### flex:basis
-* Set the initial length of item.
-* we can define  pixels, percentages or relative units
-* Default value is auto
