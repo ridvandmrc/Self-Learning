@@ -52,7 +52,7 @@ Content of this repository
         * [flex](https://github.com/ridvandmrc/Self-Learning/tree/main/css/display/flex)
         * [grid](#)
     * [Position](https://github.com/ridvandmrc/Self-Learning/tree/main/css/position)
-    * [Variables](#)
+    * [Variables](https://github.com/ridvandmrc/Self-Learning/tree/main/css/variables)
     * [Relative Units](#)
     * [Media Queries](#)
     * [Box Model](#)
