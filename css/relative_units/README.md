@@ -24,8 +24,32 @@ Some Absolute Units:
 | pt | points (1pt = 1/72 of 1in) |
 | pc | picas (1pc = 12pt)|
 
-``
+```
 * Pixels(px) are relative to the viewing devices, For low-dpi devices, 1px is one device pixel (dot) of display.
-``
+```
 
 ### Relative Length
+
+* Relative length units specify a length relative to **another length property**. 
+* Relative length units scale better between different rendering medium.
+
+Some Relative Units: 
+| Unit   |      Description      |  
+|----------|:-------------:|
+| **em** | Relative to font-size of parent element (2em means 2 times the size of the current font) |
+| **rem** | Relative to font-size of the root element   |
+| vw | Relative to 1% of the width of the viewport*(**all screen**) |
+| vh | Relative to 1% of the height of the viewport (**all screen**) |
+| vmin | Relative to 1% of viewport's* smaller dimension |
+| vmax | Relative to 1% of viewport's* larger dimension  |
+| % | Relative to the parent element  |
+
+## ======> Summary
+* There are two types of length units **absolute** and **relative**
+* Absolute length units are **fixed**, not recommended
+* Relative length units specify a length relative to **another length property**
+* **em**: relative to font-size of parent element
+* **rem**: relative to font-size of root element
+* **vw**: relative to 1% of width **all screen**
+* **vh**: relative to 1% of height **all screen**
+*- **%**: relative to the parent element
