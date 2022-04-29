@@ -54,12 +54,12 @@ Content of this repository
     * [Position](https://github.com/ridvandmrc/Self-Learning/tree/main/css/position)
     * [Variables](https://github.com/ridvandmrc/Self-Learning/tree/main/css/variables)
     * [Relative Units](https://github.com/ridvandmrc/Self-Learning/tree/main/css/relative_units)
+    * [Calc function](https://github.com/ridvandmrc/Self-Learning/tree/main/css/calc_function)
     * [Media Queries](#)
     * [Box Model](#)
     * [Background](#)
     * [Shadows](#)
     * [Animations](#)
-    * [Calc function](#)
 * **[scss](https://github.com/ridvandmrc/Self-Learning/tree/main/scss)**
     * [Overview](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/overview)
     * Style Rules
