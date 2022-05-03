@@ -58,7 +58,11 @@ Content of this repository
     * [Media Queries](https://github.com/ridvandmrc/Self-Learning/tree/main/css/media_queries)
     * [Box Model](https://github.com/ridvandmrc/Self-Learning/tree/main/css/box-model)
     * [Background](https://github.com/ridvandmrc/Self-Learning/tree/main/css/css_background)
-    * [Shadows](#)
+    * [Shadows](https://github.com/ridvandmrc/Self-Learning/tree/main/css/shadows)
+        * [Text Shadow](https://github.com/ridvandmrc/Self-Learning/tree/main/css/shadows/text_shadow)
+        * [Box Shadow](https://github.com/ridvandmrc/Self-Learning/tree/main/css/shadows/box_shadow)
+    * [transform](#)
+    * [transition](#)
     * [Animations](#)
 * **[scss](https://github.com/ridvandmrc/Self-Learning/tree/main/scss)**
     * [Overview](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/overview)
