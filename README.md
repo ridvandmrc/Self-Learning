@@ -61,8 +61,8 @@ Content of this repository
     * [Shadows](https://github.com/ridvandmrc/Self-Learning/tree/main/css/shadows)
         * [Text Shadow](https://github.com/ridvandmrc/Self-Learning/tree/main/css/shadows/text_shadow)
         * [Box Shadow](https://github.com/ridvandmrc/Self-Learning/tree/main/css/shadows/box_shadow)
-    * [transform](#)
-    * [transition](#)
+    * [Transform](#)
+    * [Transition](#)
     * [Animations](#)
 * **[scss](https://github.com/ridvandmrc/Self-Learning/tree/main/scss)**
     * [Overview](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/overview)
