@@ -1,0 +1,168 @@
+<head>
+  <style>
+    div {
+      padding: 15px;
+      background-color: lightcoral;
+      margin-top: 10px;
+      color: white;
+      font-weight: bold;
+      width: 500px;
+    }
+    .static {
+      position: static;
+    }
+    .relative {
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+    .fixed {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+    }
+    .absolute {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .relative > .absolute {
+      inset: initial;
+      left: 50px;
+    }
+
+    .overflow {
+      display: flex;
+      flex-direction: column;
+      height: 250px;
+      margin-top: 60px;
+      background-color: transparent;
+      overflow: auto;
+      padding: 0;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 0;
+    }
+
+    .static > p {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="static">
+    Position: static // is default position type not affected top, left, right,
+    bottom
+  </div>
+  <div class="relative">
+    Position: relative // is behaving like static but can be affected by top,
+    left, bottom, right If we define left, right, top, bottom element are
+    positioning in place
+  </div>
+  <div class="fixed">Position: fixed // is positioned relative to viewport</div>
+  <div class="absolute">
+    Position: absolute // is positioned to has nearest relative element, can
+    overlap element if it does not have nearest relative element, it positioned
+    to body element
+  </div>
+  <div class="relative">
+    <div class="absolute">position relative that has relative container</div>
+  </div>
+
+  <div class="static overflow">
+    <div class="sticky">Element 1</div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis
+      sapien ut urna maximus consectetur a in magna. Curabitur quis finibus
+      nisi. Cras pretium, augue a feugiat blandit, elit dolor tempus lacus, sit
+      amet mollis mi mi ac turpis. Ut eget enim neque. Sed ac scelerisque quam.
+      Quisque scelerisque volutpat vestibulum. Nunc a tempor nunc. Cras
+      tincidunt turpis et ex tempor, nec viverra nulla fringilla. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      egestas. Integer at tellus sit amet lectus egestas feugiat. Nulla
+      fringilla ante metus, in finibus tortor congue quis. Fusce bibendum tortor
+      in felis blandit, non commodo est mollis. Phasellus est massa, sodales sit
+      amet sollicitudin et, dictum eu est. Duis rutrum ante eu bibendum gravida.
+      Cras a commodo tortor. Sed nunc leo, dapibus quis placerat at, interdum
+      non leo. Morbi vitae mauris venenatis nulla scelerisque aliquam in at
+      augue. Vestibulum dignissim diam non risus porta vulputate. Aliquam et
+      odio ornare, tristique justo non, consequat tellus. Vestibulum ante ipsum
+      primis in faucibus orci luctus et ultrices posuere cubilia curae; In in
+      ante eget enim consequat sollicitudin. Sed erat urna, gravida quis risus
+      id, lobortis consectetur orci. Vestibulum diam nisi, iaculis vel arcu eu,
+      sagittis ullamcorper tortor. Proin accumsan nulla quis nisl tincidunt,
+      iaculis iaculis eros semper. Phasellus accumsan nunc at ante volutpat
+      mattis. Nullam at cursus mi. Ut consequat nunc ligula, interdum tincidunt
+      ligula tempus at. Aenean facilisis laoreet ipsum ornare vehicula.
+    </p>
+    <div class="sticky">Element 2</div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis
+      sapien ut urna maximus consectetur a in magna. Curabitur quis finibus
+      nisi. Cras pretium, augue a feugiat blandit, elit dolor tempus lacus, sit
+      amet mollis mi mi ac turpis. Ut eget enim neque. Sed ac scelerisque quam.
+      Quisque scelerisque volutpat vestibulum. Nunc a tempor nunc. Cras
+      tincidunt turpis et ex tempor, nec viverra nulla fringilla. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      egestas. Integer at tellus sit amet lectus egestas feugiat. Nulla
+      fringilla ante metus, in finibus tortor congue quis. Fusce bibendum tortor
+      in felis blandit, non commodo est mollis. Phasellus est massa, sodales sit
+      amet sollicitudin et, dictum eu est. Duis rutrum ante eu bibendum gravida.
+      Cras a commodo tortor. Sed nunc leo, dapibus quis placerat at, interdum
+      non leo. Morbi vitae mauris venenatis nulla scelerisque aliquam in at
+      augue. Vestibulum dignissim diam non risus porta vulputate. Aliquam et
+      odio ornare, tristique justo non, consequat tellus. Vestibulum ante ipsum
+      primis in faucibus orci luctus et ultrices posuere cubilia curae; In in
+      ante eget enim consequat sollicitudin. Sed erat urna, gravida quis risus
+      id, lobortis consectetur orci. Vestibulum diam nisi, iaculis vel arcu eu,
+      sagittis ullamcorper tortor. Proin accumsan nulla quis nisl tincidunt,
+      iaculis iaculis eros semper. Phasellus accumsan nunc at ante volutpat
+      mattis. Nullam at cursus mi. Ut consequat nunc ligula, interdum tincidunt
+      ligula tempus at. Aenean facilisis laoreet ipsum ornare vehicula.
+    </p>
+    <div class="sticky">Element 3</div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis
+      sapien ut urna maximus consectetur a in magna. Curabitur quis finibus
+      nisi. Cras pretium, augue a feugiat blandit, elit dolor tempus lacus, sit
+      amet mollis mi mi ac turpis. Ut eget enim neque. Sed ac scelerisque quam.
+      Quisque scelerisque volutpat vestibulum. Nunc a tempor nunc. Cras
+      tincidunt turpis et ex tempor, nec viverra nulla fringilla. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      egestas. Integer at tellus sit amet lectus egestas feugiat. Nulla
+      fringilla ante metus, in finibus tortor congue quis. Fusce bibendum tortor
+      in felis blandit, non commodo est mollis. Phasellus est massa, sodales sit
+      amet sollicitudin et, dictum eu est. Duis rutrum ante eu bibendum gravida.
+      Cras a commodo tortor. Sed nunc leo, dapibus quis placerat at, interdum
+      non leo. Morbi vitae mauris venenatis nulla scelerisque aliquam in at
+      augue. Vestibulum dignissim diam non risus porta vulputate. Aliquam et
+      odio ornare, tristique justo non, consequat tellus. Vestibulum ante ipsum
+      primis in faucibus orci luctus et ultrices posuere cubilia curae; In in
+      ante eget enim consequat sollicitudin. Sed erat urna, gravida quis risus
+      id, lobortis consectetur orci. Vestibulum diam nisi, iaculis vel arcu eu,
+      sagittis ullamcorper tortor. Proin accumsan nulla quis nisl tincidunt,
+      iaculis iaculis eros semper. Phasellus accumsan nunc at ante volutpat
+      mattis. Nullam at cursus mi. Ut consequat nunc ligula, interdum tincidunt
+      ligula tempus at. Aenean facilisis laoreet ipsum ornare vehicula.
+    </p>
+  </div>
+
+  <div class="static overflow">
+    <img
+      class="sticky"
+      src="https://cdn.turkishairlines.com/m/b182717c9e32209/original/1400-660-jpg.jpg"
+    />
+    <img
+      class="sticky"
+      src="https://upload.wikimedia.org/wikipedia/commons/a/af/Artvin-2611076.jpg"
+    />
+    <img
+      class="sticky"
+      src="https://idsb.tmgrup.com.tr/ly/uploads/images/2021/10/22/153888.jpg"
+    />
+  </div>
+</body>
