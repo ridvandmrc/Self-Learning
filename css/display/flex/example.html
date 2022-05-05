@@ -1,0 +1,146 @@
+<head>
+  <style>
+    .general {
+      background-color: lightblue;
+      margin: 10px;
+      padding: 10px;
+    }
+    .container {
+      display: flex;
+    }
+    .column {
+      flex-direction: column;
+    }
+
+    .item {
+      flex: 1;
+    }
+
+    .item-2 {
+      flex: 2;
+    }
+    .item-3 {
+      flex: 3;
+    }
+
+    .percentage-10 {
+      width: 10%;
+    }
+
+    .percentage-20 {
+      width: 20%;
+    }
+    .percentage-30 {
+      width: 30%;
+    }
+
+    .basis-10 {
+      flex-basis: 10%;
+    }
+
+    .basis-20 {
+      flex-basis: 20%;
+    }
+    .basis-30 {
+      flex-basis: 30%;
+    }
+
+    .wrap {
+      flex-wrap: wrap;
+    }
+
+    .shrink-1 {
+      flex-shrink: 1;
+    }
+
+    .shrink-2 {
+      flex-shrink: 2;
+    }
+    .shrink-3 {
+      flex-shrink: 3;
+    }
+
+    .shrink-1 {
+      flex-shrink: 1;
+    }
+
+    .grow-2 {
+      flex-grow: 2;
+    }
+    .grow-3 {
+      flex-grow: 3;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h3>Flex-direction default is Row (for container)</h3>
+  <div class="container">
+    <div class="general">content</div>
+    <div class="general">content</div>
+    <div class="general">content</div>
+    <div class="general">content</div>
+  </div>
+
+  <h3>we can set Flex-direction wit column (for container)</h3>
+  <div class="container column">
+    <div class="general">content</div>
+    <div class="general">content</div>
+    <div class="general">content</div>
+    <div class="general">content</div>
+  </div>
+
+  <h3>Arrange the item width by using flex</h3>
+  <div class="container">
+    <div class="general item item-1">item placed flex:1</div>
+    <div class="general item item-2">item placed flex:2</div>
+    <div class="general item item-3">item placed flex:3</div>
+    <div class="general item">item placed flex:1</div>
+    <div class="general item">item placed flex:1</div>
+  </div>
+
+  <h3>We can use percentage(%) to arrange the item width</h3>
+  <div class="container">
+    <div class="general percentage-10">item placed width: 10%</div>
+    <div class="general percentage-20">item placed width: 20%</div>
+    <div class="general percentage-30">item placed width: 30%</div>
+    <div class="general">item placed default</div>
+    <div class="general">item placed default</div>
+  </div>
+
+  <h3>Flex-basis: set the initial length of item it can be px,percentages or relative units</h3>
+  <div class="container">
+    <div class="general basis-10">item placed width: 10% (provided flex-basis)</div>
+    <div class="general basis-20">item placed width: 20% (provided flex-basis)</div>
+    <div class="general basis-30">item placed width: 30% (provided flex-basis)</div>
+    <div class="general">item placed default</div>
+    <div class="general">item placed default</div>
+  </div>
+
+  <h3>Flex-wrap: specifies that items should wrap or not</h3>
+  <div class="container wrap">
+    <div class="general">item placed width: 10% (provided flex-basis)</div>
+    <div class="general">item placed width: 20% (provided flex-basis)</div>
+    <div class="general">item placed width: 30% (provided flex-basis)</div>
+    <div class="general">item placed default</div>
+    <div class="general">item placed default</div>
+  </div>
+
+  <h3>Flex-grow: specifies how much the item will grow relative to rest </h3>
+  <div class="container">
+    <div class="general grow-1">flex-grow: 1</div>
+    <div class="general grow-2">flex-grow: 2</div>
+    <div class="general grow-3">flex-grow: 3</div>
+    <div class="general">item placed default</div>
+    <div class="general">item placed default</div>
+  </div>
+
+  <h3>Flex-shrink: specifies how the item will shrink to the rest </h3>
+  <div class="container">
+    <div class="general item shrink-1">flex-shrink: 1</div>
+    <div class="general item shrink-2">flex-shrink: 2</div>
+    <div class="general item shrink-3">flex-shrink: 3</div>
+  </div>
+
+</body>
