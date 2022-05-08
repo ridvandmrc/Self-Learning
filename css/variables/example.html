@@ -1,0 +1,57 @@
+<head>
+  <link rel="stylesheet" href="light.css" />
+  <link rel="stylesheet" href="dark.css" />
+  <style>
+    body {
+      background-color: var(--bg-color, white); /* var() takes two parameters one is value, other is fallback */
+      color: var(--text-color, black);
+      padding: 30px;
+      border: 2px solid var(--body-scope);
+      border-radius: 8px;
+    }
+
+    button {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      border: 2px solid var(--body-scope);
+      box-shadow: var(--shadow-1);
+    }
+  </style>
+
+  <script>
+    function toggle() {
+      document.body.toggleAttribute("dark");
+    }
+  </script>
+</head>
+
+<body>
+  <button type="button" onclick="toggle()">Toggle Dark/Light</button>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis
+    sapien ut urna maximus consectetur a in magna. Curabitur quis finibus nisi.
+    Cras pretium, augue a feugiat blandit, elit dolor tempus lacus, sit amet
+    mollis mi mi ac turpis. Ut eget enim neque. Sed ac scelerisque quam. Quisque
+    scelerisque volutpat vestibulum. Nunc a tempor nunc. Cras tincidunt turpis
+    et ex tempor, nec viverra nulla fringilla. Pellentesque habitant morbi
+    tristique senectus et netus et malesuada fames ac turpis egestas. Integer at
+    tellus sit amet lectus egestas feugiat. Nulla fringilla ante metus, in
+    finibus tortor congue quis. Fusce bibendum tortor in felis blandit, non
+    commodo est mollis. Phasellus est massa, sodales sit amet sollicitudin et,
+    dictum eu est. Duis rutrum ante eu bibendum gravida. Cras a commodo tortor.
+    Sed nunc leo, dapibus quis placerat at, interdum non leo. Morbi vitae mauris
+    venenatis nulla scelerisque aliquam in at augue. Vestibulum dignissim diam
+    non risus porta vulputate. Aliquam et odio ornare, tristique justo non,
+    consequat tellus. Vestibulum ante ipsum primis in faucibus orci luctus et
+    ultrices posuere cubilia curae; In in ante eget enim consequat sollicitudin.
+    Sed erat urna, gravida quis risus id, lobortis consectetur orci. Vestibulum
+    diam nisi, iaculis vel arcu eu, sagittis ullamcorper tortor. Proin accumsan
+    nulla quis nisl tincidunt, iaculis iaculis eros semper. Phasellus accumsan
+    nunc at ante volutpat mattis. Nullam at cursus mi. Ut consequat nunc ligula,
+    interdum tincidunt ligula tempus at. Aenean facilisis laoreet ipsum ornare
+    vehicula.
+  </p>
+</body>

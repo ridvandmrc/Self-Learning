@@ -1,0 +1,7 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --body-scope: #123ffa;
+  --light-shadow: lightgray;
+  --shadow-1: 0px 4px 16px 2px  var(--light-shadow);
+}

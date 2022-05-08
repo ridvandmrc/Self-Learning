@@ -1,0 +1,7 @@
+[dark] {
+  --body-scope: #ffa123;
+  --bg-color: #000;
+  --text-color: #fff;
+  --light-shadow: lightcyan;
+  --shadow-1: 0px 4px 16px 2px  var(--light-shadow);
+}
