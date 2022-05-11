@@ -1,6 +1,14 @@
 <html>
   <head>
     <style>
+      body {
+        font-size: 16px;
+      }
+
+      section {
+        font-size: 32px;
+      }
+
       [cm] {
         font-size: 1cm;
       }
@@ -11,6 +19,53 @@
 
       [px] {
         font-size: 36px;
+      }
+
+      [em] {
+        font-size: 1em;
+      }
+
+      [rem] {
+        margin-top: 10px;
+        font-size: 1rem;
+      }
+
+      .div-pixel {
+        width: 400px;
+        height: 400px;
+        border: 1px dotted black;
+      }
+
+      .div-pixel-2 {
+        display: flex;
+        
+        width: 400px;
+        height: 400px;
+        border: 1px dotted black;
+      }
+
+      [percentage-1] {
+        height: 50px;
+        background-color: aliceblue;
+        width: 100%;
+      }
+
+      [view-width-1] {
+        height: 50px;
+        background-color: antiquewhite;
+        width: 100vw;
+      }
+
+      [percentage-2] {
+        width: 100px;
+        height: 100%;
+        background-color: aqua;
+      }
+
+      [view-height] {
+        width: 100px;
+        height: 100vh;
+        background-color: aquamarine;
       }
     </style>
   </head>
@@ -23,5 +78,32 @@
       MM (millimeter) may be used for printers or known exact width and height
     </div>
     <div px>px (pixels): one pixel equals 1/96th of in</div>
+    <br />
+    <br />
+    <h3>Relative Units</h3>
+    <hr />
+
+    <section>
+      <div em>
+        <b>Em:</b> Relative to parent(section) font-size (parent-font-size is
+        32px) so 1em equals 32px
+      </div>
+
+      <div rem>
+        <b>Rem:</b> Relative to body font-size (body font-size is 16px) so 1rem
+        equals 16px
+      </div>
+    </section>
+
+    <h3>Below div has 400px</h3>
+    <div class="div-pixel">
+      <div percentage-1>it has 100% width</div>
+      <div view-width-1>it has 100vw width</div>
+    </div>
+
+    <div class="div-pixel-2">
+      <div percentage-2>it has 100% height</div>
+      <div view-height>it has 100vh height</div>
+    </div>
   </body>
 </html>
