@@ -14,3 +14,6 @@ Content of this Section:
     * [Template Literal Types](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/type_manipulation/template_literal_types) 
 * [Classes](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/classes)
 * [Reference](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/reference)
+* [Decorators]()
+* [Iterators and Generators]()
+* [Declaration files (*.dts)]()
