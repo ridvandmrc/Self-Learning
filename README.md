@@ -69,4 +69,4 @@ Content of this repository
     * [Animations](https://github.com/ridvandmrc/Self-Learning/tree/main/css/animation)
 * **[scss](https://github.com/ridvandmrc/Self-Learning/tree/main/scss)**
     * [Overview](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/overview)
-    * Style Rules
+    * [Style Rules](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/style_rules)
