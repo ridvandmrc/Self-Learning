@@ -123,3 +123,50 @@ p {
 ### Interpolation
 * we can use **interpolation** to inject values from **expressions** like variables and function calls into your selectors.
 * This is particularly useful when we're writing **mixins**.
+
+### CSS
+
+```css 
+@charset "UTF-8";
+span.emoji-women-holding-hands {
+  font-family: IconFont;
+  font-variant: normal;
+  font-weight: normal;
+  content: "👭";
+}
+```
+
+### SCSS 
+
+```scss
+@mixin define-emoji($name, $glyph) {
+  span.emoji-#{$name} {
+    font-family: IconFont;
+    font-variant: normal;
+    font-weight: normal;
+    content: $glyph;
+  }
+}
+
+@include define-emoji("women-holding-hands", "👭");
+```
+
+
+#### Fancy sample 
+
+```scss
+
+@mixin addClass($class){
+    #{$class} {
+        color:blue;
+        @content;
+    }
+}
+
+@include addClass(".prefix"){
+    &.flat {
+        font-size:24px;
+    }
+}
+
+```
