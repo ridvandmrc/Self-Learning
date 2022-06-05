@@ -170,3 +170,40 @@ span.emoji-women-holding-hands {
 }
 
 ```
+
+### ============> SUMMARY
+* Provide to use nested css like:
+```scss
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+ul > {
+    li {
+        color:red;
+    }
+}
+
+h2 + {
+    p {
+        color: red;
+    }
+}
+
+p ~ {
+    color:red;
+}
+```
+
+* Interpolation: we can generate class, property or all with string like:
+```css
+@mixin addClass($class){
+    #{$class} {
+        color:blue;
+        @content;
+    }
+}
+```
