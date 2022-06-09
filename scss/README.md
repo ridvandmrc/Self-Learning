@@ -7,3 +7,4 @@
     * [Placeholder Selector](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/style_rules/placeholder_selector)
     * [Property Declaration](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/style_rules/property_declaration)
 * [Variables](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/variables)
+* [Interpolation](#)
