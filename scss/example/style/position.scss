@@ -1,0 +1,6 @@
+@mixin set-position($vertical, $horizontal) {
+  position: absolute;
+  inset: unset;
+  #{$vertical}: -10px;
+  #{$horizontal}: -10px;
+}

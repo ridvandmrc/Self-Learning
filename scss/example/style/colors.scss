@@ -1,0 +1,9 @@
+$colors: (
+  error: red,
+  warning: #c5c50b,
+  info: gray,
+);
+
+@mixin button-color($property, $color) {
+  #{$property}: map-get($map: $colors, $key: #{$color});
+}

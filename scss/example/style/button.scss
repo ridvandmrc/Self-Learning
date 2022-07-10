@@ -1,0 +1,57 @@
+@use "./colors.scss" as colors;
+@use "./position.scss" as position;
+
+.button {
+  position: relative;
+  padding: 25px;
+  background-color: transparent;
+  border: 1px solid;
+  border: {
+    color: gray;
+    radius: 4px;
+  }
+  margin-top: 5px;
+
+  text-transform: capitalize;
+  text-align: center;
+  box-shadow: 0px 1px 0px 1px lightgrey;
+
+  &--error {
+    /* @extend .button; */
+    @include colors.button-color("color", "error");
+
+    @include colors.button-color("border-color", "error");
+  }
+
+  &--warning {
+    @include colors.button-color("color", "warning");
+    @include colors.button-color("border-color", "warning");
+  }
+}
+
+.button--info {
+  @extend .button;
+  @include colors.button-color("color", "info");
+  @include colors.button-color("border-color", "info");
+}
+
+.notification {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  @include position.set-position("top", "right");
+}
+
+.notification-left-bottom {
+  @extend .notification;
+  @include position.set-position("bottom", "left");
+}
+.notification-right-bottom {
+  @extend .notification;
+  @include position.set-position("bottom", "right");
+}
+.notification-left-top {
+  @extend .notification;
+  @include position.set-position("top", "left");
+}

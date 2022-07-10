@@ -1,0 +1,60 @@
+.button, .button--info {
+  position: relative;
+  padding: 25px;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: gray;
+  border-radius: 4px;
+  margin-top: 5px;
+  text-transform: capitalize;
+  text-align: center;
+  box-shadow: 0px 1px 0px 1px lightgrey;
+}
+.button--error {
+  /* @extend .button; */
+  color: red;
+  border-color: red;
+}
+.button--warning {
+  color: #c5c50b;
+  border-color: #c5c50b;
+}
+
+.button--info {
+  color: gray;
+  border-color: gray;
+}
+
+.notification, .notification-left-top, .notification-right-bottom, .notification-left-bottom {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  inset: unset;
+  top: -10px;
+  right: -10px;
+}
+
+.notification-left-bottom {
+  position: absolute;
+  inset: unset;
+  bottom: -10px;
+  left: -10px;
+}
+
+.notification-right-bottom {
+  position: absolute;
+  inset: unset;
+  bottom: -10px;
+  right: -10px;
+}
+
+.notification-left-top {
+  position: absolute;
+  inset: unset;
+  top: -10px;
+  left: -10px;
+}
+
+/*# sourceMappingURL=style.css.map */
