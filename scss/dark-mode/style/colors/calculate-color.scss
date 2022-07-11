@@ -1,0 +1,16 @@
+@use "./light.scss" as lColor;
+@use "./dark.scss" as dColor;
+
+@mixin handle-colors() {
+  body {
+    @each $key, $val in lColor.$colors {
+      #{"--"}#{$key}: $val;
+    }
+  }
+
+  body[dark] {
+    @each $key, $val in dColor.$colors {
+      #{"--"}#{$key}: $val;
+    }
+  }
+}

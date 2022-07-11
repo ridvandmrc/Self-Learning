@@ -82,5 +82,6 @@ Content of this repository
         * [@use](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40use)
         * [@each](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40each)
     * [Values](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/values)
-    * [Dark-mode](#)
+    * [Dark-mode](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/dark-mode)
+    * [basic-grid](#)
 * [Frontend](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend)

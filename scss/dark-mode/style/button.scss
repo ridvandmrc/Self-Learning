@@ -1,0 +1,10 @@
+.button {
+  width: 150px;
+  height: 48px;
+  background-color: rgb(184, 174, 174);
+  text-align: center;
+}
+
+.dark-light {
+    @extend .button;
+}
