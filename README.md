@@ -80,5 +80,7 @@ Content of this repository
         * [@extends](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40extends)
         * [@forward](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40forward)
         * [@use](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40use)
-    * [Dark-mode]()
+        * [@each](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40each)
+    * [Values](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/values)
+    * [Dark-mode](#)
 * [Frontend](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend)

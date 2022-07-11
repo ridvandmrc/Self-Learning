@@ -12,4 +12,6 @@
     * [@extends](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40extends)
     * [@forward](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40forward)
     * [@use](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40use)
+    * [@each](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40each)
+* [Values](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/values)
 * [Dark-mode](#)

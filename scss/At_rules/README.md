@@ -11,3 +11,4 @@
 * **@warn**: give console warning without error or blocking
 * **@debug**: print message for debugging process
 * **@if, @each, @for, and @while**: are control mechanism
+* **@each**: rule makes it easy to emit or evaluate code for each element ıf a **list** or each pair in a map.
