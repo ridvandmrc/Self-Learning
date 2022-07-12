@@ -1,0 +1,15 @@
+$grid-system: 2, 4, 8, 16, 24, 32;
+
+@each $screen in $grid-system {
+  .grid-#{$screen} {
+    display: flex;
+    width: #{calc(100 / $screen)}#{"%"};
+    flex-basis: #{calc(100 / $screen)}#{"%"};
+    margin: 10px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}

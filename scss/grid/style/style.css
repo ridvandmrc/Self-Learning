@@ -1,0 +1,55 @@
+.grid-2 {
+  display: flex;
+  width: 50%;
+  flex-basis: 50%;
+  margin: 10px;
+}
+
+.grid-4 {
+  display: flex;
+  width: 25%;
+  flex-basis: 25%;
+  margin: 10px;
+}
+
+.grid-8 {
+  display: flex;
+  width: 12.5%;
+  flex-basis: 12.5%;
+  margin: 10px;
+}
+
+.grid-16 {
+  display: flex;
+  width: 6.25%;
+  flex-basis: 6.25%;
+  margin: 10px;
+}
+
+.grid-24 {
+  display: flex;
+  width: 4.1666666667%;
+  flex-basis: 4.1666666667%;
+  margin: 10px;
+}
+
+.grid-32 {
+  display: flex;
+  width: 3.125%;
+  flex-basis: 3.125%;
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  background-color: rgb(158, 151, 151);
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */

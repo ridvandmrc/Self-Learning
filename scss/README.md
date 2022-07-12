@@ -15,4 +15,4 @@
     * [@each](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40each)
 * [Values](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/values)
 * [Dark-mode](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/dark-mode)
-* [basic-grid](#)
+* [basic-grid](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/grid)

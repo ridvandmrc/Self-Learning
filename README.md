@@ -5,6 +5,13 @@ Content of this repository
     * [Documents](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/document)
     * [Events](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/events)
     * [Observers](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/observers)
+        * [Intersection Observer](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/observers/intersection_observer)
+        * [Resize Observer](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/observers/resize_observer)
+        * [Mutation Observer](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/observers/mutation_observer)
+        * [Performance Observer](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver)
+        * [Reporting Observer](https://developer.mozilla.org/en-US/docs/Web/API/ReportingObserver/ReportingObserver)
+
+        
 
 * ***[Javascript](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript)***
     * [Grammar and Types](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript/grammer_and_types)
@@ -83,5 +90,5 @@ Content of this repository
         * [@each](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/At_rules/%40each)
     * [Values](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/values)
     * [Dark-mode](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/dark-mode)
-    * [basic-grid](#)
+    * [basic-grid](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/grid)
 * [Frontend](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend)

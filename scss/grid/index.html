@@ -1,0 +1,26 @@
+<head>
+  <title>Grid example</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <script>
+    function addItem(count) {
+      const el = document.createElement("div");
+      el.innerHTML = `grid-${count}`;
+      el.classList.add(`grid-${count}`);
+      el.classList.add(`grid`);
+      document.querySelector(".container").appendChild(el);
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <button onclick="addItem(2)">2</button>
+    <button onclick="addItem(4)">4</button>
+    <button onclick="addItem(8)">8</button>
+    <button onclick="addItem(16)">16</button>
+    <button onclick="addItem(32)">32</button>
+  </div>
+  <div class="container">
+    <div class="grid grid-16">grid-16</div>
+  </div>
+</body>
