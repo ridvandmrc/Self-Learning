@@ -97,5 +97,14 @@ q:lang(no) {
 </body>
 </html>
 ```
+
+### nth-child vs nth-of-type
+* p:nth-child(2) means
+  * p order should be 2
+  * if element is **p**
+* p:nth-of-type(2) means
+  * select second p element directly
+
+
 ![](pseudo-selector-1.png)
 ![](pseudo-selector-2.png)
