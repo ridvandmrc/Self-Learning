@@ -92,24 +92,24 @@ Content of this repository
     * [Dark-mode](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/dark-mode)
     * [basic-grid](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/grid)
 * [Frontend](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend)
-* [React](#)
-    * [Hooks](#)
+* React
+    * Hooks
     * Custom Hooks
     * Referenced Hooks
         * Basic Hooks
-            * [UseState](#)
-            * [UseEffect](#)
+            * UseState
+            * UseEffect
             * [useContext](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/hooks_api_reference/useContext)
         * Additional Hooks          
-            * [useCallback](#)
-            * [useMemo](#)
-            * [useRef](#)
-            * [useImperativeHandle](#)
-            * [useLayoutEffect](#)
-            * [useDebugValue](#)
-            * [useDeferredValue](#)
-            * [useTransition](#)
-            * [useId](#)
+            * [useReducer](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/hooks_api_reference/useReducer)  
+            * [useCallback](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/hooks_api_reference/useCallback)
+            * [useMemo](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/hooks_api_reference/useMemo)
+            * useImperativeHandle
+            * useLayoutEffect
+            * useDebugValue
+            * useDeferredValue
+            * useTransition
+            * useId
         * Library Hooks
-            * [useSyncExternalStore](#)
-            * [useInsertionEffect](#)
+            * useSyncExternalStore
+            * useInsertionEffect

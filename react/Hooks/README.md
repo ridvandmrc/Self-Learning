@@ -7,9 +7,9 @@
 * useEffect
 * [useContext](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/hooks_api_reference/useContext)
 # Additional Hooks
-* useReducer
-* useCallback
-* useMemo
+* [useReducer](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/hooks_api_reference/useReducer)
+* [useCallback](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/hooks_api_reference/useCallback)
+* [useMemo](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/hooks_api_reference/useMemo)
 * useRef
 * useImperativeHandle
 * useLayoutEffect
