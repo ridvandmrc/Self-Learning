@@ -15,8 +15,8 @@
 * useLayoutEffect
 * useDebugValue
 * useDeferredValue
-* useTransition
-* useId
+* [useTransition](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/hooks_api_reference/useTransition)
+* [useId](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/hooks_api_reference/useId)
 ### Library Hooks
 * useSyncExternalStore
 * useInsertionEffect
