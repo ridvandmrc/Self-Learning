@@ -41,3 +41,6 @@ export const App = () => {
 * it call **calback function**
 * it is very similiar with **useMemo**
 * generally use this if you have more than one state, and it has object reference
+
+
+### [For Real example](https://github.com/ridvandmrc/Self-Learning/blob/main/react/Hooks/hooks_api_reference/example/example-app/src/Hooks/useCallback.tsx)

@@ -70,3 +70,6 @@ return (
 * **useContext** accept return object from **createContext**
 * So, before use **useContext**, we should create object from **createContext**
 * and also we should wrap all element by **MyContext.Provider**
+
+
+### [For Real example](https://github.com/ridvandmrc/Self-Learning/blob/main/react/Hooks/hooks_api_reference/example/example-app/src/Hooks/useContext.tsx)

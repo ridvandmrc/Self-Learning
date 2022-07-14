@@ -29,3 +29,5 @@ export default App = () => {
 * use **useMemo** if you can see performance problem
 * it **reRender** to component if dependency list **updated**
 * return memorized values
+
+### [For Real example](https://github.com/ridvandmrc/Self-Learning/blob/main/react/Hooks/hooks_api_reference/example/example-app/src/Hooks/useMemo.tsx)
