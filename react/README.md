@@ -20,3 +20,4 @@
         * Library Hooks
             * useSyncExternalStore
             * useInsertionEffect
+* [Redux (Tool-kit)](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Redux-Toolkit)
