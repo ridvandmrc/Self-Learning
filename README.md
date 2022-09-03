@@ -94,7 +94,7 @@ Content of this repository
 * [Frontend](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend)
 * React
     * Hooks
-        * Custom Hooks
+        * [Custom Hooks](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Hooks/cutom_hooks)
         * Referenced Hooks
             * Basic Hooks
                 * UseState

@@ -31,4 +31,4 @@ function FriendStatus(props) {
 * Custom hooks needs to have experiences
 
 
-for more example click
+for more example [click](https://github.com/ridvandmrc/custom-hook/blob/main/src/hooks/list-data.ts)
