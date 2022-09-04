@@ -104,3 +104,151 @@ export default function App(){
 * Now, Click around again. The parent route ('app.js') persist while the `<Outlet />` swaps between
 the two child routes (`<invoices>` and `<Expenses>`)!
 * This hierarchy is incredibly powerful
+
+### Go Detail of Some Page
+* We will just add new route or change current route path
+* After add this route, it will not work properly
+
+```tsx
+import { someList } from '../data';
+
+
+{someList.map((list) => (
+    <Link 
+    to = {`/invoice/${list.id}`}>
+    key={invoice.id}
+    >
+    {invoice.name}
+    </Link>
+))}
+
+```
+
+* After click the Link button, we will nothing
+* We need to add "No Match" Route
+
+### Adding "No Match" Route
+* In order to catch other route that is not defined, we have to define "*" path
+* "*" has special meaning.
+
+```tsx
+...
+
+<Route
+    path="*"
+    element = {<main> <p> There's  nothing here!</p> </main> }
+/>
+
+...
+```
+
+ ### Reading URL Params
+ * If we want to add detail URL like `invoice/1998`
+ * We need to define this in `Route`
+ 
+ #### Let's add detail Route
+ * we will add new `Route` 
+
+ ```tsx
+ ...
+ <Route path="invoices" element={<Invoices />}>
+    <Route path=":invoicesId" element={<Invoice />} />
+</Route> 
+***
+ ```
+
+* We just created a route like `/invoices/2005` or  `/invoices/1998`
+* Also, we added second layer for `invoices`
+* Now, we need to arrange `invoices.tsx` and `invoice.tsx`
+
+```tsx
+import { Link, Outlet } from "react-router-dom";
+...
+ {invoices.map((invoice) => (
+          <Link
+            style={{ display: "block", margin: "1rem 0" }}
+            to={`/invoices/${invoice.number}`}
+            key={invoice.number}
+          >
+            {invoice.name}
+          </Link>
+        ))}
+...
+ <Outlet />
+...
+```
+* Now, it is time to create `invoice.tsx` 
+* Let's see that how to get `invoiceId`
+* we should use `useParams`
+
+```tsx
+import { useParams } from "react-router-dom";
+
+export default function Invoice() {
+    const params = useParams();
+    return <h2> {params.invoicedId} </h2>
+}
+```
+
+### Active Links
+* This is very common, especially in navigation lists, to display the link as the active link the user is looking at.
+
+```tsx
+// invoices.tsx
+
+import { NavLink, Outlet } from 'react-router-dom'
+
+export default function Invoices() {
+    return (
+        <div> 
+        {invoices.map((invoice) => 
+        <NavLink
+        style={({ isActive }) => {
+            return {{
+                color: isActive?"red":"",
+            }}
+        }} 
+        to={`/invoices/${invoice.number}`}
+        key={invoice.number}
+       >
+       {invoice.name}
+       </NavLink>
+       )}
+        </div>
+    )
+}
+```
+
+* We swapped `Link` for `NavLink`
+* We used style like function
+
+### Navigation Programmatically
+* Most of the time  the URL changes is in response to the the user clicking a link
+* But, sometimes programmer want to change the URL.
+* A very common use case is after a data update. (creating or deleting)
+
+* We will use ***useNavigate*** to navigate other page
+* We will use **useLocation** 
+
+```tsx
+export default function Invoice() {
+    const navigate = useNavigate();
+    const location = useLocation();
+    const params = useParams();
+
+    return (
+        ...
+            <button onClick={()=> {
+                navigate(`/invoices${location.search}`)
+            }}>
+            Delete
+            </button>
+
+        ...
+    )
+}
+
+```
+
+### SUMMARY
+* 
