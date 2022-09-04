@@ -250,5 +250,44 @@ export default function Invoice() {
 
 ```
 
-### SUMMARY
-* 
+###  ===========> SUMMARY
+* We should wrap `BrowserRouter`
+* Use `<Link to="/invoices"> Invoices </Link>` to navigate with history
+* We should define `<Routes>` under the BrowserRouter
+* we can use nested `Route` 
+```tsx
+<Route path="/"> {/* not to miss template */}
+    <Route path="expense" element={<Expenses />} />
+    <Route path="invoices" element={<Invoices />} />
+</Route>
+```
+* We should use `<Outlet />`, to renter nested router
+* For the Detail, we need to add "No match" route by using **'*'** 
+```tsx
+<Route
+    path="*"
+    element= {<main> There's nothing here! </main> }
+/>
+```
+* Arranged **Route** 
+```tsx
+<Route path="invoices" element={<Invoices />}>
+    <Route path=":invoicesId" element={<Invoice />}>
+</Route>
+```
+* **useParams** to access to paramId
+* NavLink to detect active link (**<NavLink />**)
+* Used **useNavigate** to navigate programmatically
+
+```tsx
+export default function Invoice() {
+    const navigate = useNavigate();
+
+    ...
+    <button onClick={()=> {
+        navigate('/invoices'+ location.search);
+    }}> Delete </button>
+
+    ...
+}
+```
