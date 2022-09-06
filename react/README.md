@@ -22,3 +22,9 @@
             * useInsertionEffect
 * [Redux (Tool-kit)](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Redux-Toolkit)
 * [Routes](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes)
+    * [Routers]()
+        * [BrowserHistory](#)
+        * [HashRouter](#)
+        * [HİstoryRouters](#)
+        * [NativeRouter](#)
+        * [BrowserHistory](#)
