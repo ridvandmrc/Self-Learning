@@ -133,3 +133,4 @@ Content of this repository
     * [Observables](https://github.com/ridvandmrc/Self-Learning/tree/main/rxjs/observables)
     * [Observer](https://github.com/ridvandmrc/Self-Learning/tree/main/rxjs/observer)
     * [Operators](https://github.com/ridvandmrc/Self-Learning/tree/main/rxjs/operators)
+    * [Subject](https://github.com/ridvandmrc/Self-Learning/tree/main/rxjs/subject)
