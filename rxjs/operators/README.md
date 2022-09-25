@@ -85,11 +85,15 @@ of(10, 20, 30)
  * from:
 
 * ### Transformation Operators
-* ConcatMap: Maps each value to an Observable, then flattens all of these inner Observables
-* **map**:
-* **mapTo**:
-* **mergeMap**:
-
+* **ConcatMap**: Maps each value to an Observable, then flattens all of these inner Observables
+* **map**: We can use this method to map data
+* **filter**: we can use this method to filter data
+* **mergeAll**: merge All nested observables, merge with related timestamp (which one is come first)
+* **concatAll**: wait all observable and run them their order (first,second,third)
+* **exhaustAll**:run first observable and skip next if collapse a time node then start other one
+* **switchAll**: switch next one if times are collapse
+* **concatMap** : run with order always shows same order
+* **switchMap**: switch other immediately  
 ### Join Creation Operators
 * **race**:
 * **zip**:
