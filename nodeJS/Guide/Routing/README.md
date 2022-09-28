@@ -219,3 +219,71 @@ app.use('/birds',birds)
 * The app will now be able to handle request to **birds** and **birds/about**
 
 ## ======> Summary
+* Classic routing is:
+```js
+app.get('/'), app.post('/'), app.all('/')
+```
+* We can use special characters in request
+  *  **(?)**: 'ab?cd' will match acd and abcd
+  * **(+)**: 'ab+cd' will match abcd, abbcd, abbbbcd and so on
+  * **(\*)**: 'ab*cd' will match abcd, abbcd, abRANDOMcd, ab123cd and so on
+  * **(xxx)?**: 'ab(cd)e' will match /abe and abcde
+  * **Regex**: '.*fly will match dragonfly and butterflyman 
+* Route Parameters:
+  * header request parameter
+  ```js
+  app.get('/users/:userId/books/:bookId',(req,res)=>{
+    req.params
+  })
+  ```
+* **Route handlers**: we can invoke 'next(route)'
+  * we can handle pre-condition
+  ```js
+  app.get('/example/b',(req, res, next) => {
+    console.log('response will be sent')
+    next()
+  }).(req, res) => {
+    res.send('hello from b')
+  }
+   // it can evaulate callback
+
+   app.get('/example/d',[cb0,cb1],(req, res, next) => {
+    console.log('sd')
+    next()
+   }),(req,res) => {
+    res.send('sda')
+   }
+  ```
+* **app.route()**: we can create chainable route handlers for a route path by using **app.route()**.
+```js
+app.route('/book')
+  .get((req,res) => {})
+  .post((req, res) => {})
+  .put((req, res) => {})
+```
+* **express.Router**:
+  * express.router class to create a modular
+  ```js
+  const express = require('express');
+  const router = express.Router();
+
+  router.use((req, res, next) => {
+    console.log('Time: ',Date.now())
+  })
+
+  router.get('/',(req, res) => {
+    res.send('birds home page')
+  })
+
+  router.get('/about',(req,res) => {
+    res.send('about')
+  })
+
+  module.exports = router
+
+  // load from  other file
+
+  const birds = require('./birds'
+  // ...
+  app.use('/birds',birds)
+  ```
