@@ -35,3 +35,4 @@
         * [Route](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes/Components/Route)
         * [Routes](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes/Components/Routes)
     * [Hooks](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes/Hooks)
+* [Env Variables](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Env-Variable)
