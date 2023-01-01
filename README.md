@@ -133,6 +133,7 @@ Content of this repository
     - [Hooks](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes/Hooks)
   - [Env Variables](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Env-Variable)
   - [React Test](https://github.com/ridvandmrc/Self-Learning/tree/main/react/test)
+  - [Lazy Loading](https://github.com/ridvandmrc/Self-Learning/tree/main/react/lazy)
 
 - [RxJS](https://github.com/ridvandmrc/Self-Learning/tree/main/rxjs/overview)
   - [Observables](https://github.com/ridvandmrc/Self-Learning/tree/main/rxjs/observables)
