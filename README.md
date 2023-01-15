@@ -150,3 +150,9 @@ Content of this repository
     - [Routing](https://github.com/ridvandmrc/Self-Learning/tree/main/nodeJS/Guide/Routing)
     - [Middleware](https://github.com/ridvandmrc/Self-Learning/tree/main/nodeJS/Guide/Middleware)
     - [Using Middleware](https://github.com/ridvandmrc/Self-Learning/tree/main/nodeJS/Guide/UsingMiddleware)
+
+* [SSR](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr)
+  - [General](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/generalSSR)
+  - [NextJS](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/nextJs)
+    - [Started](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/nextJs/getStarted)
+    - [Pages](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/nextJs/pages)

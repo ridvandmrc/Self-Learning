@@ -1,0 +1,2 @@
+- [Started](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/nextJs/getStarted)
+- [Pages](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/nextJs/pages)
