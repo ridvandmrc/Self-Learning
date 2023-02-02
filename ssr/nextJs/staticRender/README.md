@@ -75,9 +75,31 @@ export async function getServerSideProps() {
 }
 ```
 
+### getInitialProps
+
+- **GetInitialProps** enables server-side rendering in a page and allows us to do **initial data population**,
+- It means sending the page with the data already populated from the server
+- This is especially useful for **SEO**
+- **async** function can be added in **getInitialProps** function
+
+```tsx
+function Page({ stars }) {
+  return <div>Next stars: {stars}</div>;
+}
+
+Page.getInitialProps = async (ctx) => {
+  const res = await fetch("https://api.github.com/repos/vercel/next.js");
+  const json = await res.json();
+  return { stars: json.stargazers_count };
+};
+
+export default Page;
+```
+
 ### =====> SUMMARY
 
 - We should use **getStaticProps**, If content will not be changed
 - it generated at the build time so it is not rendering every rendering
 - If we need to use **id** for detail page or another, we should use **getStaticPaths**
 - If the application needs to have dynamic content from server, we should use **getServerSideProps**
+- **getInitialProps** can be used for data fetching
