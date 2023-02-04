@@ -159,4 +159,5 @@ Content of this repository
     - [Static Render](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/nextJs/staticRender)
     - [Client Side](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/nextJs/client-side)
     - [Layout](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/nextJs/layout)
+    - [Api](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/nextJs/api)
   - [SWR](#)
