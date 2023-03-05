@@ -93,6 +93,7 @@ Content of this repository
   - [Dark-mode](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/dark-mode)
   - [basic-grid](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/grid)
 - [Frontend](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend)
+
 - React
 
   - Hooks
@@ -134,6 +135,15 @@ Content of this repository
   - [Env Variables](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Env-Variable)
   - [React Test](https://github.com/ridvandmrc/Self-Learning/tree/main/react/test)
   - [Lazy Loading](https://github.com/ridvandmrc/Self-Learning/tree/main/react/lazy)
+  - [React Query](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query)
+    - [Overview](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/overview)
+    - [Guides and Concept](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/Guides-and-concepts)
+      - [Mutations](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/Guides-and-concepts/Mutations)
+      - [Placeholder Query](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/Guides-and-concepts/Placeholder-Query-Data)
+      - [Queries](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/Guides-and-concepts/Queries)
+      - [Query Function](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/Guides-and-concepts/Query-Function)
+      - [Query Invalidation](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/Guides-and-concepts/Query-Invalidation)
+      - [Query Retries](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/Guides-and-concepts/Query-Retries)
 
 - [RxJS](https://github.com/ridvandmrc/Self-Learning/tree/main/rxjs/overview)
   - [Observables](https://github.com/ridvandmrc/Self-Learning/tree/main/rxjs/observables)
