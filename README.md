@@ -144,6 +144,8 @@ Content of this repository
       - [Query Function](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/Guides-and-concepts/Query-Function)
       - [Query Invalidation](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/Guides-and-concepts/Query-Invalidation)
       - [Query Retries](https://github.com/ridvandmrc/Self-Learning/tree/main/react/React-Query/Guides-and-concepts/Query-Retries)
+      - [State Management](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management)
+        - [Zustand](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Zustand)
 
 - [RxJS](https://github.com/ridvandmrc/Self-Learning/tree/main/rxjs/overview)
   - [Observables](https://github.com/ridvandmrc/Self-Learning/tree/main/rxjs/observables)
