@@ -22,6 +22,11 @@
       - useSyncExternalStore
       - useInsertionEffect
 - [Redux (Tool-kit)](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Redux-Toolkit)
+- [State Management](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management)
+  - [Zustand](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Zustand)
+  - [Recoil](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Recoil)
+  - [Jotai](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Jotai)
+  - [Mobx](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Mobx)
 - [Routes](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes)
   - [Routers]()
     - [BrowserHistory](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes/Routers/BrowserRouter)
