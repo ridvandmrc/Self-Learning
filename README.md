@@ -93,6 +93,9 @@ Content of this repository
   - [Dark-mode](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/dark-mode)
   - [basic-grid](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/grid)
 - [Frontend](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend)
+  - [Fundemantal](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend/Fundemantal)
+  - [Browser](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend/Browser)
+  - [Internet](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend/Internet)
 
 - React
 
