@@ -93,6 +93,7 @@ Content of this repository
   - [Dark-mode](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/dark-mode)
   - [basic-grid](https://github.com/ridvandmrc/Self-Learning/tree/main/scss/grid)
 - [Frontend](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend)
+
   - [Fundemantal](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend/Fundemantal)
   - [Browser](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend/Browser)
   - [Internet](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend/Internet)
@@ -125,7 +126,9 @@ Content of this repository
     - [Recoil](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Recoil)
     - [Jotai](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Jotai)
     - [Mobx](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Mobx)
+
 - [Routes](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes)
+
   - [Routes](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes)
   - [Routes](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes)
     - [Routers]()
@@ -189,3 +192,14 @@ Content of this repository
     - [Suspense](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/SWR/Suspense)
     - [Cache](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/SWR/Cache%20Provide)
     - [Performance](https://github.com/ridvandmrc/Self-Learning/tree/main/ssr/SWR/Performance)
+* [Solid Prenciples](https://github.com/ridvandmrc/Self-Learning/blob/main/solid/Readme.md)
+
+  - [Single Responsiblity](<https://github.com/ridvandmrc/Self-Learning/tree/main/solid/1-)%20Single%20-%20Responsibility>)
+
+  - [Open Close](<https://github.com/ridvandmrc/Self-Learning/blob/main/solid/2-)%20Open%20-%20Close/README.md>)
+
+  - [Liskov Subsutition](<https://github.com/ridvandmrc/Self-Learning/blob/main/solid/3-)%20Liskov%20Subsutition/Readme.md>)
+
+  - [Interface Segragation](<https://github.com/ridvandmrc/Self-Learning/blob/main/solid/4-)%20Interface%20Segregation/Readme.md>)
+
+  - [Dependency Inversion](<https://github.com/ridvandmrc/Self-Learning/blob/main/solid/5-)%20Dependency%20Inversion/ReadMe.md>)
