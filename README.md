@@ -11,6 +11,9 @@ Content of this repository
     - [Mutation Observer](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/observers/mutation_observer)
     - [Performance Observer](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver)
     - [Reporting Observer](https://developer.mozilla.org/en-US/docs/Web/API/ReportingObserver/ReportingObserver)
+  - [Parallelisim](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/parallelism)
+    - [Service Worker](https://github.com/ridvandmrc/Self-Learning/tree/main/web-API/parallelism/service-worker)
+    - [Web worker](#)
 
 - **_[Javascript](https://github.com/ridvandmrc/Self-Learning/tree/main/javascript)_**
 
