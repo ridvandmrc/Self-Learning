@@ -103,3 +103,11 @@ self.addEventListener("install", (event) => {
 - It also enable offline experience, **intecept network request and access push notifications**
 - Firstly, it should be **registered** to service worker (if succeed it should work Service worker global scope).
 - An **install** event is always first one sent to a service worker.
+
+### When should we use Service worker?
+
+- With service worker, we can track all **fetch** request so that we can cache most important request for offline experience
+- We can store font and important images
+- and also we can intercept notification
+
+For example look at the file
