@@ -64,3 +64,5 @@ myWorker.terminate();
 - There are some **global and helper function** that we should know,
   - **onMessage**: we can get the data from **web worker or main js** (worker.onmessage)
   - **postMessage**: We can use this method when we want to pass data from **web worker or mainJS**
+
+* for more information we can review the files
