@@ -130,6 +130,9 @@ Content of this repository
     - [Recoil](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Recoil)
     - [Jotai](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Jotai)
     - [Mobx](https://github.com/ridvandmrc/Self-Learning/tree/main/react/State-Management/Mobx)
+  - Form Control
+    - [React Hook Form](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Form-Control/Hook-Form)
+    - [Formik](#)
 
 - [Routes](https://github.com/ridvandmrc/Self-Learning/tree/main/react/Routes)
 
