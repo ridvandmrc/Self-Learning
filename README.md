@@ -101,6 +101,7 @@ Content of this repository
   - [Browser](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend/Browser)
   - [Internet](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend/Internet)
   - [Accessibility](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend/Accesibility)
+  - [Semantic HTML](https://github.com/ridvandmrc/Self-Learning/tree/main/frontend/SemanticHTML)
 
 - React
 
