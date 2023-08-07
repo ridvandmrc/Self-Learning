@@ -53,6 +53,7 @@ Content of this repository
   - [Decorators]()
   - [Iterators and Generators]()
   - [Declaration files (\*.dts)]()
+  - [Advance](https://github.com/ridvandmrc/Self-Learning/tree/main/typescript/Advance)
 
 - **_[css](https://github.com/ridvandmrc/Self-Learning/tree/main/css)_**
   - [Introduction](https://github.com/ridvandmrc/Self-Learning/tree/main/css/introduction)
