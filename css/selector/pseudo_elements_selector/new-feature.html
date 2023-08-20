@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .sctn :is(h3, div, a) {
+        color: blue;
+      }
+
+      .sctn-2 :where(h3, div, a) {
+        color: red;
+      }
+      .sctn-2 :is(:hover, :focus, :active) {
+        color: blue;
+      }
+
+      .where:has(.second-element) > p.first-element {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test new css feature</h1>
+
+    <section class="sctn">
+      <h3>header</h3>
+      <div>div 1</div>
+      <div>div 2</div>
+      <div>div 3</div>
+      <a href="#">loo</a>
+    </section>
+
+    <section class="sctn-2">
+      <h3>header</h3>
+      <div>div 1</div>
+      <div>div 2</div>
+      <div>div 3</div>
+      <a href="#">loo</a>
+    </section>
+
+    <section class="where">
+      <p class="first-element">first element</p>
+      <p class="second-element">second element</p>
+      <p class="third-element">third element</p>
+    </section>
+  </body>
+</html>
