@@ -6,3 +6,12 @@
     * A suite of developer tools to help us develop, build, test and update code
 
 * With Angular, we can scale from single-developer project to enterprise-level applications. 
+
+## Understanding Angular
+* To understand the capability of the Angular, we need to learn about the following:
+
+    * **Components**
+    * **Templates**
+    * **Directives**
+    * **Dependency injection**
+
