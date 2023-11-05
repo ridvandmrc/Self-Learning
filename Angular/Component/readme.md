@@ -1,0 +1,8 @@
+- [Component](https://github.com/ridvandmrc/Self-Learning/tree/main/Angular/Component)
+  - [Component](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Component/component.md)
+  - [Content Projection](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Component/content-projection.md)
+  - [Interaction](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Component/interaction.md)
+  - [Lifecycle](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Component/lifecycle.md)
+  - [sharing Data](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Component/sharing-data-between-child...md)
+  - [styles](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Component/styles.md)
+  - [view encapsulation](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Component/view-encapsulation.md)

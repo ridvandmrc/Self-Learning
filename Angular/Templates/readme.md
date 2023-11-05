@@ -1,0 +1,2 @@
+- [Templates](https://github.com/ridvandmrc/Self-Learning/tree/main/Angular/Templates)
+  - [Binding](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Templates/binding.md)
