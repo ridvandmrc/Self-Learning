@@ -95,15 +95,60 @@ The expression can be one of:
 - Angular two way binding combination of this **[()]**.
 - The **[()]** syntax combines the bracket of property binding, **[]** and event binding **()**.
 
-```html
+````html
 <app-sizer [(size)]="fontSizePx"></app-sizer>
-```
 
-### Some Example
+### Some Example - Class binding ```html
+<div [class.selected]="data === index"></div>
+// added selected class
+<div [style.color]="selectedColor"></div>
+// added color with style
+````
 
-- Class binding
+### Template Reference variables
+
+- Template variables help us to use data from one part of a template in another of the template.
+- Use template variables to perform tasks such as respond to user input ...
+
+  - a DOM element within a template
+  - a directive or component
+  - a templateRef from an **ng-template**
+  - a web component
 
 ```html
-<div [class.selected]="data === index"> </div> // added selected class
-<div [style.color]="selectedColor"></div> // added color with style
+<input #phone placeholder="test" />
+
+<button type="button" (click)="callPhone(phone.value)">Call</button>
 ```
+
+### Variable specifying a names
+
+- If the variable specifies a name on the right-hand side, such as `#var="ngModel"`, the variable refers to the directive or component on the element with a match `exportAs`names.
+
+#### Using **Ngform** with template variables
+
+- In most cases, Angular sets the template variable's value to the element on which it occurs.
+- The **NgForm** directive demonstrates getting a reference to a different value by referencing a directive's `exportAs` names.
+
+```html
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+  <label for="name">Name</label>
+  <input
+    type="text"
+    id="name"
+    class="form-control"
+    name="name"
+    ngModel
+    required
+  />
+  <button type="submit">Submit</button>
+</form>
+
+<div [hidden]="!itemForm.form.valid">
+  <p>{{ submitMessage }}</p>
+</div>
+```
+
+- without the **ngForm** attribute value, the reference value of **itemForm** would be the **HTMLFORMELEMENT**
+- If an element is an Angular component, a reference with no attribute value will automatically reference the component instance.
+- 
