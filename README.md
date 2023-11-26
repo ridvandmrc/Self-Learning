@@ -220,6 +220,9 @@ Content of this repository
     - [Structural Directive](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Directive/Structural-directive.md)
   - [Templates](https://github.com/ridvandmrc/Self-Learning/tree/main/Angular/Templates)
     - [Binding](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Templates/binding.md)
+  - [NgModule](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Module/ReadMe.md)
+  - [Routing](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Route/ReadMe.md)
+  - [Form Management](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Form/ReadMe.md)
 
 * [Solid Prenciples](https://github.com/ridvandmrc/Self-Learning/blob/main/solid/Readme.md)
 
