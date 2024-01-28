@@ -20,3 +20,5 @@
 - [NgModule](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Module/ReadMe.md)
 - [Routing](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Route/ReadMe.md)
 - [Form Management](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/Form/ReadMe.md)
+- [Pipes](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/pipes/readme.md)
+- [Http Client](https://github.com/ridvandmrc/Self-Learning/blob/main/Angular/HttpClient/readme.md)
