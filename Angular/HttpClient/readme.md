@@ -98,3 +98,34 @@ class LoggingInterceptor implements HttpInterceptor {
 provide:HTTP_INTERCEPTORS,useClass:LogginInterceptor,multi:true
 ...
 ```
+
+### Interceptor Response Events
+
+- Also we can intercept `response event` and `transform`.
+
+```ts
+export function loggingInterceptor(
+  req: HttpRequest<unknown>,
+  next: HttpHandlerFn
+): Observable<HttpEvent<unknown>> {
+  return next(req).pipe(
+    tap((event) => {
+      if (event.type === HttpEventType.Response) {
+        console.log(req.url, "returned a response with status", event.status);
+      }
+    })
+  );
+}
+```
+
+### Modifying Request
+
+- While we intercept the request, we can modify the events like:
+
+* Add Authorize to header.
+
+```ts
+const reqWithHeader = req.clone({
+  headers: req.headers.set("X-New-Header", "new header value"),
+});
+```
