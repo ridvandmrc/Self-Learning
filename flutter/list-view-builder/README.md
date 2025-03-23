@@ -1,24 +1,22 @@
 ### List View Builder
 
-- we can build a list in a minute.
-- 
-
+- We can build a list in a minute.
+- Also, ListView is a scrollable so it is easy to show too many component.
+- Also, initially it does not know the available screen so we need to **wrap** it with **Expanded**
+component
 
 ```dart
 
-body: ListView.builder(
-    itemCount: itemCount,
+body: Expanded(
+    child: ListView.builder(
+    itemCount: arr.length,
     itemBuilder:(context,index) {
-        return Card(
-            child:ListTile(
-                onTap:() {},
-                title: Text('title'),
-                leading: CircleAvatar(
-                    backgroundImage:AssetImage('assets/...')
-                )
-            ) // is a flutter list view 
+        return Container(
+            color: Colors.grey[800],
+            padding: const EdgeInsets.all(40),
+            margin: const EdgeInsetsonly(bottom: 40),
+            child:Text(arr[index])
         )
-
     }
-)
+))
 ```
