@@ -48,3 +48,27 @@ class _CoffeClass extends State<CoffeClass> {
     }
 }
 ```
+
+### Passing an Argument to Statefull widget
+* We can define the argument for **statefull** widget same as **stateless** widget
+* In order to access it from extended class we should use **widget.** keyword.
+
+```dart
+class CoffeClass extends StatefulWidget {
+    const CoffeClass(this.coffe, {super.key});
+
+    final Coffe coffe
+
+    @override
+    State<CoffeClass> createState() => _CoffeClass(); // state is created
+}
+
+class _CoffeClass extends State<CoffeClass> {
+
+    // we should use widget.coffe
+
+    widget.coffe.star
+}
+
+
+```

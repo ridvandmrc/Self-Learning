@@ -48,3 +48,21 @@ class _TestWidget extends State<TestWidget>{
     }
 }
 ```
+
+### Filter
+- **In flutter** filter can be applied by using **where** function.
+- the usage is same like filter function in JS.
+
+```dart
+late List<Skill> availableSkills; // late means it can be null
+
+@override
+void initState(){
+    availableSkills = allSkills.where((skill){
+        return skill.vocation == widget.character.vocation;
+    }).toList();
+
+    super.initState();
+}
+
+```

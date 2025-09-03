@@ -14,7 +14,7 @@ main() => runApp(MaterialApp(
     }
 ))
 
-// 
+//
 Button(
     onPress:()=>{
         Navigator.pushNamed(context,'/location')
@@ -34,3 +34,25 @@ build(){
     _data = ModalRoute.of(context).settings.arguments
 }
 ```
+
+### Navigator.push()
+
+- If we don't use the proper route history,
+- we can use **Navigator.push()**
+- While creating it, we have to define a **MaterialPageRouter** and **builder**.
+
+```dart
+onPress:()=>{ 
+    // ...
+    // context comes from build function
+    Navigator.push(context, MaterialPageRoute(
+        builder: (ctx) => const Home()
+    ))
+}
+
+
+```
+
+### Navigator.pop()
+
+- Remove the route from history.
